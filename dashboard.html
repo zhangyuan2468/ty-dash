@@ -165,6 +165,12 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 .tag-orange { background: #fff7ed; color: var(--orange); }
 .tag-gold { background: #fef9e7; color: var(--gold); }
 
+/* Live alert badges */
+.live-alert { padding: 6px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; display: flex; align-items: center; gap: 4px; margin-top: 4px; line-height: 1.4; }
+.alert-red { background: #fef2f2; color: var(--red); border: 1px solid #fca5a5; }
+.alert-orange { background: #fff7ed; color: var(--orange); border: 1px solid #fed7aa; }
+.alert-green { background: #f0fdf4; color: var(--green); border: 1px solid #bbf7d0; }
+
 /* Rating badge */
 .rating-badge { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
 .rating-gold { background: #fef3c7; color: #92400e; border: 1px solid #fbbf24; }
@@ -299,8 +305,8 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
             <div id="flowFunnelChart" style="height:280px"></div>
           </div>
           <div class="chart-box">
-            <div class="chart-box-title">在播直播间明细</div>
-            <div id="liveRoomDetail" style="height:280px;overflow-y:auto" class="scrollbar"></div>
+            <div class="chart-box-title">在播直播间明细 <span style="font-size:11px;color:var(--text-3);font-weight:400">（含直播预警）</span></div>
+            <div id="liveRoomDetail" style="height:380px;overflow-y:auto" class="scrollbar"></div>
           </div>
         </div>
       </div>
@@ -603,24 +609,63 @@ function drawFlowFunnel(fr) {
 
 function drawLiveRoomDetail() {
   const rooms = (RAW_DATA && RAW_DATA.rooms) || [];
-  const html = rooms.map(r => {
+  const liveRooms = rooms.filter(r => r.meta && r.meta.is_live);
+  if (liveRooms.length === 0) {
+    document.getElementById('liveRoomDetail').innerHTML = '<div class="loading">暂无在播直播间</div>';
+    return;
+  }
+  const html = liveRooms.map(r => {
     const m = r.meta || {};
     const gmv = num(m.gmv) / 100;
+    const acu = num(m.acu);
+    const watchUv = num(m.live_watch_uv_td);
+    const likes = num(m.live_like_cnt_td);
+    const comments = num(m.live_comment_cnt_td);
+    const interactCnt = likes + comments;
+    const interactRate = watchUv > 0 ? (interactCnt / watchUv * 100) : 0;
+    const hasQrcode = m.has_qrcode !== false;
+
+    // ===== 直播预警逻辑 =====
+    const alerts = [];
+    // 挂播预警：在线人数 <= 5
+    if (acu <= 5) {
+      alerts.push({ level: 'red', icon: '\u26a0', text: '挂播预警：在线仅' + acu + '人，疑似挂播/空播' });
+    }
+    // 低互动预警：互动率 < 5%
+    if (interactRate < 5) {
+      alerts.push({ level: 'orange', icon: '\u26a0', text: '低互动预警：互动率' + interactRate.toFixed(1) + '%（点赞' + likes + '+评论' + comments + ' vs 观看' + fmt(watchUv) + '）' });
+    }
+    // 无二维码预警
+    if (!hasQrcode) {
+      alerts.push({ level: 'red', icon: '\u26a0', text: '视觉预警：未检测到二维码/贴片，建议补充引导转化物料' });
+    }
+    // 正常状态
+    if (alerts.length === 0) {
+      alerts.push({ level: 'green', icon: '\u2713', text: '直播状态正常' });
+    }
+    const alertHtml = alerts.map(a =>
+      '<div class="live-alert alert-' + a.level + '">' + a.icon + ' ' + a.text + '</div>'
+    ).join('');
+
     return '<div style="padding:12px;border:1px solid var(--border-light);border-radius:8px;margin-bottom:8px">' +
       '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">' +
       '<span style="font-size:14px;font-weight:600;color:var(--text-1)">' + (m.nickname || '未知') + '</span>' +
-      (m.is_live ? '<span class="tag tag-green">直播中</span>' : '<span class="tag">已结束</span>') +
+      '<span class="tag tag-green">直播中</span>' +
       '</div>' +
-      '<div style="font-size:11px;color:var(--text-3);margin-bottom:8px">' + (m.area || '') + ' · ' + (m.room_type_tag || '') + ' · 开播 ' + (m.live_start_str || '--') + '</div>' +
-      '<div style="display:flex;gap:16px;flex-wrap:wrap">' +
-      '<span style="font-size:12px;color:var(--text-2)">在线 <b style="color:var(--text-1)">' + (m.acu || 0) + '</b></span>' +
-      '<span style="font-size:12px;color:var(--text-2)">观看 <b style="color:var(--text-1)">' + fmt(m.live_watch_uv_td || 0) + '</b></span>' +
-      '<span style="font-size:12px;color:var(--text-2)">成交 <b style="color:var(--gold)">¥' + fmtMoney(gmv) + '</b></span>' +
-      '<span style="font-size:12px;color:var(--text-2)">点赞 <b style="color:var(--text-1)">' + fmt(m.live_like_cnt_td || 0) + '</b></span>' +
-      '<span style="font-size:12px;color:var(--text-2)">评论 <b style="color:var(--text-1)">' + fmt(m.live_comment_cnt_td || 0) + '</b></span>' +
-      '</div></div>';
+      '<div style="font-size:11px;color:var(--text-3);margin-bottom:8px">' + (m.area || '') + ' \u00b7 ' + (m.room_type_tag || '') + ' \u00b7 开播 ' + (m.live_start_str || '--') + ' \u00b7 时长 ' + (m.duration_str || '--') + '</div>' +
+      '<div style="display:flex;gap:14px;flex-wrap:wrap;margin-bottom:6px">' +
+      '<span style="font-size:12px;color:var(--text-2)">在线 <b style="color:var(--text-1)">' + acu + '</b></span>' +
+      '<span style="font-size:12px;color:var(--text-2)">峰值 <b style="color:var(--text-1)">' + (m.pcu || acu) + '</b></span>' +
+      '<span style="font-size:12px;color:var(--text-2)">观看 <b style="color:var(--text-1)">' + fmt(watchUv) + '</b></span>' +
+      '<span style="font-size:12px;color:var(--text-2)">成交 <b style="color:var(--gold)">\u00a5' + fmtMoney(gmv) + '</b></span>' +
+      '<span style="font-size:12px;color:var(--text-2)">点赞 <b style="color:var(--text-1)">' + fmt(likes) + '</b></span>' +
+      '<span style="font-size:12px;color:var(--text-2)">评论 <b style="color:var(--text-1)">' + fmt(comments) + '</b></span>' +
+      '<span style="font-size:12px;color:var(--text-2)">互动率 <b style="color:' + (interactRate < 5 ? 'var(--orange)' : 'var(--green)') + '">' + interactRate.toFixed(1) + '%</b></span>' +
+      '</div>' +
+      alertHtml +
+      '</div>';
   }).join('');
-  document.getElementById('liveRoomDetail').innerHTML = html || '<div class="loading">暂无在播直播间</div>';
+  document.getElementById('liveRoomDetail').innerHTML = html;
 }
 
 // ========== Render: Summary ==========

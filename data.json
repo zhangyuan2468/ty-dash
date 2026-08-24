@@ -71,7 +71,8 @@
         "room_title": "太原电信线上营业厅正在直播",
         "room_type_tag": "蓝V",
         "city": "太原",
-        "area": "蓝V直营"
+        "area": "蓝V直营",
+        "has_qrcode": false
       }
     }
   ],
