@@ -195,6 +195,51 @@ body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC"
 .kpi-divider::after { content: attr(data-label); position: absolute; left: 50%; top: -10px; transform: translateX(-50%); background: var(--surface); padding: 0 12px; font-size: 12px; color: var(--text-3); }
 footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-size: 10px; }
 
+/* ========== QA Section ========== */
+.qa-summary { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--sp-3); margin-bottom: var(--sp-4); }
+.qa-summary .kpi-card { text-align: center; padding: 14px; }
+.qa-summary .kpi-value { font-size: 28px; }
+.qa-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 16px; }
+.qa-layout-left { overflow-x: auto; }
+.qa-layout-right { max-height: 500px; overflow-y: auto; }
+.qa-room-card { padding: 14px; border: 1px solid var(--border-light); border-radius: 8px; margin-bottom: 10px; position: relative; overflow: hidden; transition: box-shadow .15s; }
+.qa-room-card:hover { box-shadow: var(--shadow-hover); }
+.qa-room-card.alert-sev { border-left: 4px solid var(--red); }
+.qa-room-card.alert-warn { border-left: 4px solid var(--orange); }
+.qa-room-card.alert-info { border-left: 4px solid var(--primary); }
+.qa-room-card.alert-pass { border-left: 4px solid var(--green); }
+.qa-room-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+.qa-room-name { font-size: 14px; font-weight: 600; color: var(--text-1); }
+.qa-room-badges { display: flex; gap: 6px; align-items: center; }
+.live-badge { background: #fef2f2; color: var(--red); padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; display: flex; align-items: center; gap: 3px; }
+.live-badge::before { content: '\25CF'; font-size: 10px; animation: pulse 2s infinite; }
+.live-link-btn { background: var(--primary-soft); color: var(--primary); padding: 2px 8px; border-radius: 4px; font-size: 11px; text-decoration: none; cursor: pointer; transition: background .15s; }
+.live-link-btn:hover { background: var(--primary); color: #fff; }
+.qa-pass-badge { background: #f0fdf4; color: var(--green); padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; border: 1px solid #bbf7d0; }
+.qa-room-meta { font-size: 11px; color: var(--text-3); margin-bottom: 8px; }
+.qa-room-metrics { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+.qa-room-metric { font-size: 12px; color: var(--text-2); }
+.qa-room-metric b { color: var(--text-1); font-weight: 600; }
+.qa-alert-tag { display: inline-block; padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; margin-right: 4px; margin-top: 4px; }
+.qa-alert-severe { background: #fef2f2; color: var(--red); border: 1px solid #fca5a5; }
+.qa-alert-warn { background: #fff7ed; color: var(--orange); border: 1px solid #fed7aa; }
+.qa-alert-info { background: var(--primary-soft); color: var(--primary); border: 1px solid #bfdbfe; }
+.qa-alert-pass { background: #f0fdf4; color: var(--green); border: 1px solid #bbf7d0; }
+.alert-list { }
+.alert-item { padding: 10px 12px; border: 1px solid var(--border-light); border-radius: 6px; margin-bottom: 8px; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
+.alert-item:hover { border-color: var(--primary); box-shadow: var(--shadow-sm); }
+.alert-item-header { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; }
+.alert-item-desc { font-size: 12px; color: var(--text-2); font-weight: 500; }
+.alert-item-detail { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+.alert-item-room { font-size: 10px; color: var(--text-3); margin-top: 4px; }
+.alert-filter-bar { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+.alert-filter-tab { padding: 4px 12px; border-radius: 16px; font-size: 12px; cursor: pointer; background: var(--bg-elevated); color: var(--text-2); border: 1px solid var(--border-light); transition: all .15s; }
+.alert-filter-tab:hover { border-color: var(--primary); }
+.alert-filter-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.qa-craftman-section { margin-top: 16px; }
+.qa-craftman-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
+@media (max-width: 1100px) { .qa-layout { grid-template-columns: 1fr; } .qa-craftman-grid { grid-template-columns: repeat(2, 1fr); } }
+
 /* ========== Responsive ========== */
 @media (max-width: 1100px) {
   .kpi-grid-6 { grid-template-columns: repeat(3, 1fr); }
@@ -267,6 +312,9 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
     </div>
     <div class="nav-item" data-target="sec-source" onclick="navTo('sec-source')">
       <span class="nav-icon">📊</span><span class="nav-label">成交来源</span>
+    </div>
+    <div class="nav-item" data-target="sec-qa" onclick="navTo('sec-qa')">
+      <span class="nav-icon">🛡</span><span class="nav-label">直播质检</span>
     </div>
   </div>
   <div class="sidebar-footer">
@@ -414,6 +462,29 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
           <div class="chart-box">
             <div class="chart-box-title">直播间成交渠道分布</div>
             <div id="channelPieChart" style="height:320px"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 8: Live QA -->
+    <div class="section" id="sec-qa">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-title"><span class="icon">🛡</span>直播质检看板</div>
+        <span class="section-toggle">▼</span>
+      </div>
+      <div class="section-body">
+        <div style="font-size:12px;color:var(--text-3);margin-bottom:8px">数据来源：抖音来客·直播管理 + 职人管理 · 每60秒自动刷新</div>
+        <div class="qa-summary" id="qaSummaryGrid"></div>
+        <div class="qa-layout">
+          <div class="qa-layout-left scrollbar" id="qaRoomList"></div>
+          <div class="qa-layout-right scrollbar" id="qaAlertPanel"></div>
+        </div>
+        <div class="qa-craftman-section">
+          <div class="kpi-divider" data-label="职人直播概况（近7日）"></div>
+          <div class="qa-craftman-grid" id="qaCraftmanGrid"></div>
+          <div class="table-wrap scrollbar" style="max-height:320px">
+            <table class="data-table" id="qaCraftmanTable"></table>
           </div>
         </div>
       </div>
@@ -969,6 +1040,132 @@ function renderSource(RAW) {
   }, true);
 }
 
+// ========== Render: QA Section ==========
+function renderQA(RAW) {
+  const qa = RAW.qa;
+  if (!qa) return;
+
+  // Summary cards
+  const qs = qa.summary || {};
+  const sumItems = [
+    { label: '在播直播间', value: qs.live_cnt || 0, color: 'blue' },
+    { label: '告警总数', value: qs.alert_cnt || 0, color: 'red' },
+    { label: '严重告警', value: qs.severe_cnt || 0, color: 'red' },
+    { label: '质检通过', value: qs.pass_cnt || 0, color: 'green' },
+  ];
+  document.getElementById('qaSummaryGrid').innerHTML = sumItems.map(it =>
+    '<div class="kpi-card ' + it.color + '"><div class="kpi-label">' + it.label + '</div><div class="kpi-value">' + it.value + '</div></div>'
+  ).join('');
+
+  // Room cards
+  const rooms = qa.rooms || [];
+  if (rooms.length === 0) {
+    document.getElementById('qaRoomList').innerHTML = '<div class="loading">当前无在播直播间</div>';
+  } else {
+    document.getElementById('qaRoomList').innerHTML = rooms.map(r => {
+      const alerts = r.alerts || [];
+      const hasSevere = alerts.some(a => a.level === 'severe');
+      const hasWarn = alerts.some(a => a.level === 'warn');
+      const cardCls = hasSevere ? 'alert-sev' : hasWarn ? 'alert-warn' : 'alert-pass';
+      const gmv = num(r.gmv);
+      const acu = num(r.acu);
+      const watchUv = num(r.watch_uv);
+      const likes = num(r.like_cnt);
+      const comments = num(r.comment_cnt);
+      const interactRate = r.interact_rate || (watchUv > 0 ? ((likes + comments) / watchUv * 100) : 0);
+
+      const alertTags = alerts.map(a => {
+        const cls = a.level === 'severe' ? 'qa-alert-severe' : a.level === 'warn' ? 'qa-alert-warn' : 'qa-alert-info';
+        return '<span class="qa-alert-tag ' + cls + '">' + a.type + '</span>';
+      }).join('');
+
+      const passBadge = r.qa_pass ? '<span class="qa-pass-badge">\u2713 第' + (r.qa_round || 1) + '次质检通过</span>' : '';
+
+      return '<div class="qa-room-card ' + cardCls + '">' +
+        '<div class="qa-room-header">' +
+        '<span class="qa-room-name">' + (r.nickname || '未知') + '</span>' +
+        '<span class="qa-room-badges"><span class="live-badge">直播中</span>' +
+        (r.unique_id ? '<a class="live-link-btn" href="https://live.douyin.com/' + r.unique_id + '" target="_blank">进入直播间</a>' : '') +
+        passBadge + '</span>' +
+        '</div>' +
+        '<div class="qa-room-meta">' + (r.city || '') + ' \u00b7 ' + (r.room_type_tag || '') + ' \u00b7 开播 ' + (r.live_start_str || '--') + ' \u00b7 时长 ' + (r.duration_str || '--') + '</div>' +
+        '<div class="qa-room-metrics">' +
+        '<span class="qa-room-metric">在线 <b>' + acu + '</b></span>' +
+        '<span class="qa-room-metric">峰值 <b>' + (r.pcu || acu) + '</b></span>' +
+        '<span class="qa-room-metric">观看 <b>' + fmt(watchUv) + '</b></span>' +
+        '<span class="qa-room-metric">成交 <b style="color:var(--gold)">\u00a5' + fmtMoney(gmv) + '</b></span>' +
+        '<span class="qa-room-metric">券数 <b>' + (r.pay_cert_cnt || 0) + '</b></span>' +
+        '<span class="qa-room-metric">点赞 <b>' + fmt(likes) + '</b></span>' +
+        '<span class="qa-room-metric">评论 <b>' + fmt(comments) + '</b></span>' +
+        '<span class="qa-room-metric">互动率 <b style="color:' + (interactRate < 5 ? 'var(--orange)' : 'var(--green)') + '">' + interactRate.toFixed(1) + '%</b></span>' +
+        '</div>' +
+        (alertTags ? '<div>' + alertTags + '</div>' : '') +
+        (alerts.length === 0 ? '<div class="qa-alert-tag qa-alert-pass">\u2713 质检通过</div>' : '') +
+        '</div>';
+    }).join('');
+  }
+
+  // Alert panel
+  const allAlerts = qa.alerts || [];
+  const filterBar = '<div class="alert-filter-bar">' +
+    '<div class="alert-filter-tab active" onclick="filterAlerts(\'all\',this)">全部(' + allAlerts.length + ')</div>' +
+    '<div class="alert-filter-tab" onclick="filterAlerts(\'severe\',this)">严重(' + allAlerts.filter(a => a.level === 'severe').length + ')</div>' +
+    '<div class="alert-filter-tab" onclick="filterAlerts(\'warn\',this)">警告(' + allAlerts.filter(a => a.level === 'warn').length + ')</div>' +
+    '<div class="alert-filter-tab" onclick="filterAlerts(\'info\',this)">提示(' + allAlerts.filter(a => a.level === 'info').length + ')</div>' +
+    '</div>';
+
+  const alertHtml = allAlerts.map(a => {
+    const cls = a.level === 'severe' ? 'qa-alert-severe' : a.level === 'warn' ? 'qa-alert-warn' : 'qa-alert-info';
+    const levelText = a.level === 'severe' ? '\u4e25\u91cd' : a.level === 'warn' ? '\u8b66\u544a' : '\u63d0\u793a';
+    return '<div class="alert-item" data-level="' + a.level + '">' +
+      '<div class="alert-item-header"><span class="qa-alert-tag ' + cls + '">' + levelText + '</span><span class="alert-item-desc">' + a.type + '</span></div>' +
+      '<div class="alert-item-detail">' + a.desc + '</div>' +
+      (a.detail ? '<div class="alert-item-detail" style="color:var(--text-3)">' + a.detail + '</div>' : '') +
+      '<div class="alert-item-room">\u6765\u81ea\uff1a' + a.room + '</div>' +
+      '</div>';
+  }).join('');
+
+  document.getElementById('qaAlertPanel').innerHTML = filterBar + '<div class="alert-list" id="alertList">' + (alertHtml || '<div class="loading">\u6682\u65e0\u544a\u8b66</div>') + '</div>';
+
+  // Craftman summary
+  const cs = qa.craftman_summary || {};
+  const csItems = [
+    { label: '职人总数', value: cs.total || 0, color: 'blue' },
+    { label: '运营中', value: cs.active || 0, color: 'green' },
+    { label: '有成交职人', value: cs.has_sales || 0, color: 'gold' },
+    { label: '周成交额', value: fmtMoney(cs.week_sales || 0) + '元', color: 'gold' },
+  ];
+  document.getElementById('qaCraftmanGrid').innerHTML = csItems.map(it =>
+    '<div class="kpi-card ' + it.color + '" style="text-align:center;padding:12px"><div class="kpi-label">' + it.label + '</div><div class="kpi-value" style="font-size:22px">' + it.value + '</div></div>'
+  ).join('');
+
+  // Craftman live top table
+  const craftTop = qa.craftman_live_top || [];
+  let ctHtml = '<thead><tr><th>排名</th><th>职人名称</th><th>所属门店</th><th>开播场次</th><th>成交额</th><th>粉丝数</th></tr></thead><tbody>';
+  craftTop.forEach((c, i) => {
+    ctHtml += '<tr>' +
+      '<td style="font-weight:700;color:var(--primary)">' + (i + 1) + '</td>' +
+      '<td style="text-align:left;font-weight:600;color:var(--text-1)">' + c.name + '</td>' +
+      '<td style="text-align:left;font-size:12px">' + c.store + '</td>' +
+      '<td>' + c.live_cnt + '</td>' +
+      '<td style="color:var(--gold);font-weight:600">\u00a5' + fmtMoney(c.sales) + '</td>' +
+      '<td>' + c.fans + '</td>' +
+      '</tr>';
+  });
+  ctHtml += '</tbody>';
+  document.getElementById('qaCraftmanTable').innerHTML = ctHtml;
+}
+
+function filterAlerts(level, el) {
+  document.querySelectorAll('.alert-filter-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  const items = document.querySelectorAll('#alertList .alert-item');
+  items.forEach(item => {
+    if (level === 'all' || item.dataset.level === level) item.style.display = '';
+    else item.style.display = 'none';
+  });
+}
+
 // ========== Data Loading ==========
 function setSyncStatus(state) {
   const dot = document.getElementById('syncDot');
@@ -995,6 +1192,7 @@ async function refresh() {
     renderProduct(d);
     renderLive(d);
     renderSource(d);
+    renderQA(d);
     setSyncStatus('success');
   } catch(e) {
     console.error('Load data error:', e);
