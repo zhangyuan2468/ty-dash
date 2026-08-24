@@ -240,6 +240,32 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
 .qa-craftman-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 12px; }
 @media (max-width: 1100px) { .qa-layout { grid-template-columns: 1fr; } .qa-craftman-grid { grid-template-columns: repeat(2, 1fr); } }
 
+/* ========== Weekly Comparison ========== */
+.wc-summary { display: grid; grid-template-columns: repeat(6, 1fr); gap: var(--sp-3); margin-bottom: var(--sp-4); }
+.wc-summary .kpi-card { text-align: center; padding: 12px; }
+.wc-summary .kpi-value { font-size: 24px; }
+.wc-filter-bar { display: flex; gap: 6px; margin-bottom: 10px; flex-wrap: wrap; }
+.wc-filter-tab { padding: 4px 14px; border-radius: 16px; font-size: 12px; cursor: pointer; background: var(--bg-elevated); color: var(--text-2); border: 1px solid var(--border-light); transition: all .15s; }
+.wc-filter-tab:hover { border-color: var(--primary); }
+.wc-filter-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.wc-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.wc-table th { background: var(--bg-elevated); padding: 8px 6px; text-align: center; font-weight: 600; color: var(--text-2); white-space: nowrap; cursor: pointer; position: sticky; top: 0; z-index: 1; }
+.wc-table th:hover { background: #e6eaf0; }
+.wc-table th.sort-asc::after { content: ' \2191'; color: var(--primary); }
+.wc-table th.sort-desc::after { content: ' \2193'; color: var(--primary); }
+.wc-table td { padding: 7px 6px; text-align: center; color: var(--text-2); border-bottom: 1px solid var(--border-light); }
+.wc-table tr:hover { background: var(--primary-soft); }
+.wc-up { color: var(--green); font-weight: 600; }
+.wc-down { color: var(--red); font-weight: 600; }
+.wc-flat { color: var(--text-3); }
+.wc-zero { color: var(--text-3); font-style: italic; }
+.wc-alert-cell { text-align: left; max-width: 200px; }
+.wc-tag { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 10px; font-weight: 500; margin: 1px 2px; white-space: nowrap; }
+.wc-tag-severe { background: #fef2f2; color: var(--red); border: 1px solid #fca5a5; }
+.wc-tag-warn { background: #fff7ed; color: var(--orange); border: 1px solid #fed7aa; }
+.wc-tag-good { background: #f0fdf4; color: var(--green); border: 1px solid #bbf7d0; }
+@media (max-width: 1100px) { .wc-summary { grid-template-columns: repeat(3, 1fr); } .wc-table { font-size: 11px; } }
+
 /* ========== Responsive ========== */
 @media (max-width: 1100px) {
   .kpi-grid-6 { grid-template-columns: repeat(3, 1fr); }
@@ -315,6 +341,9 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
     </div>
     <div class="nav-item" data-target="sec-qa" onclick="navTo('sec-qa')">
       <span class="nav-icon">🛡</span><span class="nav-label">直播质检</span>
+    </div>
+    <div class="nav-item" data-target="sec-weekly" onclick="navTo('sec-weekly')">
+      <span class="nav-icon">📈</span><span class="nav-label">门店周对比</span>
     </div>
   </div>
   <div class="sidebar-footer">
@@ -486,6 +515,22 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
           <div class="table-wrap scrollbar" style="max-height:320px">
             <table class="data-table" id="qaCraftmanTable"></table>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section: Weekly Comparison -->
+    <div class="section" id="sec-weekly">
+      <div class="section-header" onclick="toggleSection(this)">
+        <div class="section-title"><span class="icon">📈</span>门店周对比分析</div>
+        <span class="section-toggle">▼</span>
+      </div>
+      <div class="section-body">
+        <div style="font-size:12px;color:var(--text-3);margin-bottom:8px">本周（<span id="wcWeekLabel">--</span>）vs 上周（<span id="wcLastWeekLabel">--</span>）· 门店维度环比对比与预警</div>
+        <div class="wc-summary" id="wcSummaryGrid"></div>
+        <div class="wc-filter-bar" id="wcFilterBar"></div>
+        <div class="table-wrap scrollbar" style="max-height:520px">
+          <table class="wc-table" id="wcTable"></table>
         </div>
       </div>
     </div>
@@ -1166,6 +1211,135 @@ function filterAlerts(level, el) {
   });
 }
 
+// ========== Render: Weekly Comparison ==========
+let weeklyStores = [];
+let wcSortKey = 'pay_gmv';
+let wcSortDir = 'desc';
+let wcFilterType = 'all';
+
+function renderWeekly(RAW) {
+  const wc = RAW.weekly_comparison;
+  if (!wc) return;
+  document.getElementById('wcWeekLabel').textContent = wc.week_label || '本周';
+  document.getElementById('wcLastWeekLabel').textContent = wc.last_week_label || '上周';
+  const stores = (wc.stores || []).map(s => {
+    const tw = s.this_week || {}, lw = s.last_week || {};
+    const c = {};
+    ['pay_gmv','pay_cert_cnt','verify_gmv','verify_cert_cnt','live_cnt','watch_uv'].forEach(k => {
+      const tv = num(tw[k]), lv = num(lw[k]);
+      c[k + '_ratio'] = lv > 0 ? ((tv - lv) / lv * 100) : (tv > 0 ? 100 : 0);
+    });
+    c.tw_vr = tw.pay_gmv > 0 ? (num(tw.verify_gmv) / num(tw.pay_gmv) * 100) : 0;
+    c.lw_vr = lw.pay_gmv > 0 ? (num(lw.verify_gmv) / num(lw.pay_gmv) * 100) : 0;
+    c.vr_change = c.tw_vr - c.lw_vr;
+    c.cvr_change = num(tw.cvr) - num(lw.cvr);
+    const alerts = [];
+    if (tw.pay_gmv === 0 && lw.pay_gmv > 0) {
+      alerts.push({ level: 'severe', type: '零成交', desc: '本周成交为0，上周¥' + fmtMoney(lw.pay_gmv) });
+    } else if (lw.pay_gmv > 0) {
+      const r = c.pay_gmv_ratio;
+      if (r <= -50) alerts.push({ level: 'severe', type: '成交暴跌', desc: '下滑' + Math.abs(r).toFixed(1) + '%（¥' + fmtMoney(lw.pay_gmv) + '→¥' + fmtMoney(tw.pay_gmv) + ')' });
+      else if (r <= -20) alerts.push({ level: 'warn', type: '成交下滑', desc: '下滑' + Math.abs(r).toFixed(1) + '%（¥' + fmtMoney(lw.pay_gmv) + '→¥' + fmtMoney(tw.pay_gmv) + ')' });
+    }
+    if (tw.pay_gmv > 0 && lw.pay_gmv > 0 && c.vr_change <= -10) {
+      alerts.push({ level: 'warn', type: '核销率降', desc: c.lw_vr.toFixed(1) + '%→' + c.tw_vr.toFixed(1) + '%（-' + Math.abs(c.vr_change).toFixed(1) + 'pp）' });
+    }
+    if (tw.live_cnt === 0 && lw.live_cnt > 0) {
+      alerts.push({ level: 'warn', type: '直播停摆', desc: '本周0场，上周' + lw.live_cnt + '场' });
+    }
+    if (lw.cvr > 0 && tw.cvr > 0 && c.cvr_change <= -2) {
+      alerts.push({ level: 'warn', type: '转化率降', desc: lw.cvr.toFixed(1) + '%→' + tw.cvr.toFixed(1) + '%（-' + Math.abs(c.cvr_change).toFixed(1) + 'pp）' });
+    }
+    if (lw.pay_gmv > 0 && tw.pay_gmv > 0 && c.pay_gmv_ratio >= 30) {
+      alerts.push({ level: 'good', type: '增长亮眼', desc: '增长' + c.pay_gmv_ratio.toFixed(1) + '%（¥' + fmtMoney(lw.pay_gmv) + '→¥' + fmtMoney(tw.pay_gmv) + ')' });
+    }
+    if (tw.pay_gmv > 0 && lw.pay_gmv === 0) {
+      alerts.push({ level: 'good', type: '新增动销', desc: '本周新增成交¥' + fmtMoney(tw.pay_gmv) });
+    }
+    s._c = c; s._a = alerts; s._active = tw.pay_gmv > 0;
+    return s;
+  });
+  const total = stores.length;
+  const active = stores.filter(s => s._active).length;
+  const improved = stores.filter(s => s._c.pay_gmv_ratio > 0 && s._active).length;
+  const declined = stores.filter(s => s._c.pay_gmv_ratio < 0 && s._active).length;
+  const zero = stores.filter(s => !s._active).length;
+  const alertCnt = stores.filter(s => s._a.length > 0).length;
+  const sumItems = [
+    { label: '门店总数', value: total, color: 'blue' },
+    { label: '本周动销', value: active, color: 'green' },
+    { label: '环比增长', value: improved, color: 'green' },
+    { label: '环比下滑', value: declined, color: 'orange' },
+    { label: '零成交', value: zero, color: 'red' },
+    { label: '有预警', value: alertCnt, color: 'red' },
+  ];
+  document.getElementById('wcSummaryGrid').innerHTML = sumItems.map(it => '<div class="kpi-card ' + it.color + '"><div class="kpi-label">' + it.label + '</div><div class="kpi-value">' + it.value + '</div></div>').join('');
+  const filters = [
+    { key: 'all', label: '全部(' + total + ')' },
+    { key: 'improved', label: '增长(' + improved + ')' },
+    { key: 'declined', label: '下滑(' + declined + ')' },
+    { key: 'zero', label: '零成交(' + zero + ')' },
+    { key: 'alert', label: '有预警(' + alertCnt + ')' },
+  ];
+  document.getElementById('wcFilterBar').innerHTML = filters.map(f => '<div class="wc-filter-tab ' + (f.key === wcFilterType ? 'active' : '') + '" onclick="filterWeekly(\'' + f.key + '\',this)">' + f.label + '</div>').join('');
+  weeklyStores = stores;
+  drawWeeklyTable();
+}
+
+function filterWeekly(type, el) {
+  wcFilterType = type;
+  document.querySelectorAll('.wc-filter-tab').forEach(t => t.classList.remove('active'));
+  if (el) el.classList.add('active');
+  drawWeeklyTable();
+}
+
+function sortWeekly(key) {
+  if (wcSortKey === key) { wcSortDir = wcSortDir === 'desc' ? 'asc' : 'desc'; } else { wcSortKey = key; wcSortDir = 'desc'; }
+  drawWeeklyTable();
+}
+
+function drawWeeklyTable() {
+  let stores = weeklyStores.slice();
+  if (wcFilterType === 'improved') stores = stores.filter(s => s._c.pay_gmv_ratio > 0 && s._active);
+  else if (wcFilterType === 'declined') stores = stores.filter(s => s._c.pay_gmv_ratio < 0 && s._active);
+  else if (wcFilterType === 'zero') stores = stores.filter(s => !s._active);
+  else if (wcFilterType === 'alert') stores = stores.filter(s => s._a.length > 0);
+  const sortVal = (s) => {
+    if (wcSortKey === 'name') return s.name;
+    if (wcSortKey === 'area') return s.area;
+    if (wcSortKey === 'rating') return s.rating;
+    if (wcSortKey.startsWith('tw_')) return num(s.this_week[wcSortKey.slice(3)]);
+    if (wcSortKey.startsWith('lw_')) return num(s.last_week[wcSortKey.slice(3)]);
+    if (wcSortKey === 'gmv_ratio') return s._c.pay_gmv_ratio;
+    if (wcSortKey === 'verify_rate') return s._c.tw_vr;
+    if (wcSortKey === 'cvr_change') return s._c.cvr_change;
+    if (wcSortKey === 'alerts') return s._a.length;
+    return 0;
+  };
+  stores.sort((a, b) => {
+    const va = sortVal(a), vb = sortVal(b);
+    if (typeof va === 'string') return wcSortDir === 'desc' ? vb.localeCompare(va) : va.localeCompare(vb);
+    return wcSortDir === 'desc' ? vb - va : va - vb;
+  });
+  const sc = (key) => key === wcSortKey ? (wcSortDir === 'desc' ? 'sort-desc' : 'sort-asc') : '';
+  const th = (key, label) => '<th class="' + sc(key) + '" onclick="sortWeekly(\'' + key + '\')">' + label + '</th>';
+  let html = '<thead><tr>' + th('name','门店') + th('area','区域') + th('rating','评级') + th('tw_pay_gmv','本周成交') + th('lw_pay_gmv','上周成交') + th('gmv_ratio','环比') + th('tw_pay_cert_cnt','本周券') + th('lw_pay_cert_cnt','上周券') + th('tw_verify_gmv','核销额') + th('verify_rate','核销率') + th('tw_live_cnt','本周直播') + th('lw_live_cnt','上周直播') + th('tw_watch_uv','观看') + th('cvr_change','转化率变化') + th('alerts','预警') + '</tr></thead><tbody>';
+  stores.forEach(s => {
+    const tw = s.this_week, lw = s.last_week, c = s._c;
+    const gmvCls = c.pay_gmv_ratio > 0 ? 'wc-up' : c.pay_gmv_ratio < 0 ? 'wc-down' : 'wc-flat';
+    const gmvSign = c.pay_gmv_ratio > 0 ? '\u2191' : c.pay_gmv_ratio < 0 ? '\u2193' : '\u2014';
+    const gmvText = tw.pay_gmv === 0 && lw.pay_gmv === 0 ? '<span class="wc-zero">\u2014</span>' : '<span class="' + gmvCls + '">' + gmvSign + Math.abs(c.pay_gmv_ratio).toFixed(1) + '%</span>';
+    const vrText = s._active ? c.tw_vr.toFixed(1) + '%' : '<span class="wc-zero">\u2014</span>';
+    const vrChg = (s._active && lw.pay_gmv > 0) ? '<span class="' + (c.vr_change < -10 ? 'wc-down' : c.vr_change > 0 ? 'wc-up' : 'wc-flat') + '">' + (c.vr_change >= 0 ? '+' : '') + c.vr_change.toFixed(1) + 'pp</span>' : '';
+    const cvrText = (tw.cvr > 0 && lw.cvr > 0) ? '<span class="' + (c.cvr_change < -2 ? 'wc-down' : c.cvr_change > 0 ? 'wc-up' : 'wc-flat') + '">' + (c.cvr_change >= 0 ? '+' : '') + c.cvr_change.toFixed(1) + 'pp</span>' : '<span class="wc-zero">\u2014</span>';
+    const alertHtml = s._a.map(a => { const cls = a.level === 'severe' ? 'wc-tag-severe' : a.level === 'warn' ? 'wc-tag-warn' : 'wc-tag-good'; return '<span class="wc-tag ' + cls + '" title="' + a.desc + '">' + a.type + '</span>'; }).join(' ') || '<span class="wc-zero">\u2014</span>';
+    const fv = (v, isMoney) => v === 0 ? '<span class="wc-zero">0</span>' : isMoney ? '\u00a5' + fmtMoney(v) : v;
+    html += '<tr><td style="text-align:left;font-weight:600;color:var(--text-1)">' + s.name + '</td><td style="font-size:11px">' + s.area + '</td><td><span class="rating-badge ' + ratingClass(s.rating) + '" style="font-size:10px;padding:1px 6px">' + s.rating + '</span></td><td style="color:var(--gold);font-weight:600">' + fv(tw.pay_gmv,true) + '</td><td style="color:var(--text-3)">' + fv(lw.pay_gmv,true) + '</td><td>' + gmvText + '</td><td>' + fv(tw.pay_cert_cnt) + '</td><td style="color:var(--text-3)">' + fv(lw.pay_cert_cnt) + '</td><td style="color:var(--green)">' + fv(tw.verify_gmv,true) + '</td><td>' + vrText + ' ' + vrChg + '</td><td>' + (tw.live_cnt > 0 ? tw.live_cnt : '<span class="wc-zero">0</span>') + '</td><td style="color:var(--text-3)">' + (lw.live_cnt > 0 ? lw.live_cnt : '<span class="wc-zero">0</span>') + '</td><td>' + fv(tw.watch_uv) + '</td><td>' + cvrText + '</td><td class="wc-alert-cell">' + alertHtml + '</td></tr>';
+  });
+  html += '</tbody>';
+  document.getElementById('wcTable').innerHTML = html;
+}
+
 // ========== Data Loading ==========
 function setSyncStatus(state) {
   const dot = document.getElementById('syncDot');
@@ -1193,6 +1367,7 @@ async function refresh() {
     renderLive(d);
     renderSource(d);
     renderQA(d);
+    renderWeekly(d);
     setSyncStatus('success');
   } catch(e) {
     console.error('Load data error:', e);
