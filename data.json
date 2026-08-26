@@ -1,18 +1,18 @@
 {
-  "ts": "20260826095000",
+  "ts": "20260826102608",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 3,
     "live_cnt": 3,
-    "live_show_uv": 2970,
-    "live_watch_uv": 398,
-    "live_gmv": 950,
-    "live_pay_cert_cnt": 9,
+    "live_show_uv": 5943,
+    "live_watch_uv": 672,
+    "live_gmv": 1850,
+    "live_pay_cert_cnt": 20,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260826095000",
+    "_ts": "20260826102608",
     "_stale": false
   },
   "summary": {
@@ -24,7 +24,7 @@
     "month_refund_cert_cnt": 1629,
     "month_pay_user_cnt": 2788,
     "month_verify_user_cnt": 1773,
-    "active_poi_ratio": 54.69,
+    "active_poi_ratio": 71.88,
     "month_visit_uv": 33425,
     "month_visit_cvr": 8.34,
     "month_live_gmv": 111687.30,
@@ -41,9 +41,9 @@
     "week_visit_cvr": 8.15,
     "week_live_gmv": 34769.00,
     "week_video_gmv": 20779.00,
-    "week_live_cnt": 176,
-    "day_avg_pay_gmv": 179.20,
-    "day_avg_verify_gmv": 85.41,
+    "week_live_cnt": 174,
+    "day_avg_pay_gmv": 185.33,
+    "day_avg_verify_gmv": 106.14,
     "week_pay_gmv_ratio": -6.73,
     "week_verify_gmv_ratio": -16.86,
     "week_refund_gmv_ratio": 19.62,
@@ -54,7 +54,7 @@
     "week_live_show_uv": 178724,
     "week_live_watch_uv": 16737,
     "poi_total": 64,
-    "poi_active": 35
+    "poi_active": 46
   },
   "rooms": [
     {
@@ -63,15 +63,16 @@
         "unique_id": "tydx10000",
         "room_id": "83a34da19bb4c2313cabb6af431d0a192e55a352ddce0ff34dcdfa8cd4b45dfb",
         "is_live": true,
-        "gmv": 550,
-        "acu": 5,
-        "pcu": 220,
-        "live_watch_uv_td": 220,
-        "live_show_uv_td": 1500,
+        "gmv": 1450,
+        "acu": 7,
+        "pcu": 423,
+        "watch_uv": 423,
+        "live_watch_uv_td": 423,
+        "live_show_uv_td": 3325,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
         "live_start_str": "2026-08-26 09:25:43",
-        "duration_str": "24分17秒",
+        "duration_str": "44分10秒",
         "room_title": "太原电信线上营业厅正在直播",
         "room_type_tag": "蓝V",
         "city": "太原",
@@ -86,14 +87,15 @@
         "room_id": "566511fc8a248e4175ddfdabd5aebf5473910b4fcdd4e0ee79b778e0f8e866",
         "is_live": true,
         "gmv": 400,
-        "acu": 2,
-        "watch_uv": 176,
-        "live_watch_uv_td": 176,
-        "live_show_uv_td": 1450,
+        "acu": 1,
+        "pcu": 229,
+        "watch_uv": 229,
+        "live_watch_uv_td": 229,
+        "live_show_uv_td": 2322,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
         "live_start_str": "2026-08-26 09:01:02",
-        "duration_str": "48分58秒",
+        "duration_str": "1小时6分47秒",
         "room_title": "小吉中国电信营业厅(千峰路店)正在直播",
         "room_type_tag": "职人",
         "city": "太原",
@@ -108,14 +110,15 @@
         "room_id": "3c00364f1d26d2b6bcc65c0a9e5f5d7b293035243e0046f54732837dce9bf17d",
         "is_live": true,
         "gmv": 0,
-        "acu": 0,
-        "watch_uv": 2,
-        "live_watch_uv_td": 2,
-        "live_show_uv_td": 20,
+        "acu": 1,
+        "pcu": 20,
+        "watch_uv": 20,
+        "live_watch_uv_td": 20,
+        "live_show_uv_td": 296,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-26 09:39:27",
-        "duration_str": "10分33秒",
+        "live_start_str": "2026-08-26 09:39:29",
+        "duration_str": "28分34秒",
         "room_title": "太原电信福利专场",
         "room_type_tag": "职人",
         "city": "太原",
@@ -155,28 +158,28 @@
     "total": 64
   },
   "product_ranking": [
-    { "rank": 1, "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】", "pay_gmv": 41800, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 2, "name": "【到店充值】存300元话费送30G流量【山西电信】", "pay_gmv": 27600, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 3, "name": "【到店核销有礼】到店充值存50话费【太原电信】", "pay_gmv": 6200, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 4, "name": "50元得200元代金券到店领纸品福利【山西电信】", "pay_gmv": 1750, "pay_cert_cnt": 0, "type": "代金券", "verify_gmv": 0 },
-    { "rank": 5, "name": "【盛夏狂欢】【宽带特惠】单宽带预约安装300M宽带新装福利价【太原电信】", "pay_gmv": 1160, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 }
+    { "rank": 1, "name": "【到店有礼】到店充值100元话费送抽纸二选一【山西电信】", "pay_gmv": 114200, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 2, "name": "【到店充值】存300元话费送30G流量【山西电信】", "pay_gmv": 71400, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 3, "name": "【到店核销有礼】到店充值存50话费【太原电信】", "pay_gmv": 54000, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 4, "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】", "pay_gmv": 47400, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 5, "name": "50元得200元代金券到店领纸品福利【山西电信】", "pay_gmv": 2850.30, "pay_cert_cnt": 0, "type": "代金券", "verify_gmv": 0 }
   ],
   "live_ranking": [
-    { "rank": 1, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2400, "pay_cert_cnt": 19, "duration": "1小时33分32秒", "type": "蓝V" },
-    { "rank": 2, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1700, "pay_cert_cnt": 21, "duration": "2小时18分51秒", "type": "蓝V" },
-    { "rank": 3, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1559, "pay_cert_cnt": 13, "duration": "40分43秒", "type": "蓝V" },
-    { "rank": 4, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1350, "pay_cert_cnt": 14, "duration": "1小时24分29秒", "type": "蓝V" },
-    { "rank": 5, "name": "亲贤街翼堆小姐姐", "unique_id": "qxj35103510", "pay_gmv": 1350, "pay_cert_cnt": 16, "duration": "1小时30分40秒", "type": "职人" }
+    { "rank": 1, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2720, "pay_cert_cnt": 37, "duration": "5小时14分5秒", "type": "蓝V" },
+    { "rank": 2, "name": "小路", "unique_id": "", "pay_gmv": 2450, "pay_cert_cnt": 19, "duration": "2小时0分7秒", "type": "职人" },
+    { "rank": 3, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2400, "pay_cert_cnt": 19, "duration": "1小时33分32秒", "type": "蓝V" },
+    { "rank": 4, "name": "辜负✨", "unique_id": "", "pay_gmv": 2200, "pay_cert_cnt": 27, "duration": "1小时9分2秒", "type": "职人" },
+    { "rank": 5, "name": "亲贤街翼堆小姐姐", "unique_id": "qxj35103510", "pay_gmv": 1850, "pay_cert_cnt": 20, "duration": "1小时52分57秒", "type": "职人" }
   ],
   "source_distribution": [
-    { "name": "推荐分享场景", "value": 41530.00, "ratio": 55.91 },
-    { "name": "抖音搜索场景", "value": 20190.00, "ratio": 27.18 },
-    { "name": "团购商城场景", "value": 11529.00, "ratio": 15.52 },
-    { "name": "线下场景", "value": 1028.00, "ratio": 1.38 }
+    { "name": "推荐分享场景", "value": 47089.00, "ratio": 58.65 },
+    { "name": "抖音搜索场景", "value": 20370.00, "ratio": 25.37 },
+    { "name": "团购商城场景", "value": 11429.00, "ratio": 14.24 },
+    { "name": "线下场景", "value": 1395.00, "ratio": 1.74 }
   ],
   "product_type": [
-    { "name": "团购", "value": 72577.00, "ratio": 97.71 },
-    { "name": "代金券", "value": 1700.00, "ratio": 2.29 }
+    { "name": "团购", "value": 291833.00, "ratio": 98.85 },
+    { "name": "代金券", "value": 3400.30, "ratio": 1.15 }
   ],
   "channel_distribution": {
     "live_gmv": 34769.00,
@@ -185,24 +188,24 @@
     "video_gmv": 20779.00,
     "video_ratio": 25.88,
     "video_ratio_change": -28.15,
-    "other_gmv": 24735.00,
-    "other_ratio": 30.81,
-    "huoke_gmv": 8500.00,
-    "huoke_ratio": 10.59,
-    "huoke_ratio_change": 44.07,
-    "search_card_gmv": 8690.00,
-    "search_card_ratio": 10.82,
-    "search_card_ratio_change": 51.92
+    "other_gmv": 8695.00,
+    "other_ratio": 10.83,
+    "huoke_gmv": 7500.00,
+    "huoke_ratio": 9.34,
+    "huoke_ratio_change": 20.97,
+    "search_card_gmv": 8540.00,
+    "search_card_ratio": 10.64,
+    "search_card_ratio_change": 46.74
   },
   "qa": {
     "summary": {
       "live_cnt": 3,
-      "alert_cnt": 6,
-      "severe_cnt": 6,
-      "warn_cnt": 0,
+      "alert_cnt": 8,
+      "severe_cnt": 5,
+      "warn_cnt": 3,
       "info_cnt": 0,
       "pass_cnt": 0,
-      "qa_round": 1
+      "qa_round": 2
     },
     "rooms": [
       {
@@ -215,23 +218,23 @@
         "city": "太原",
         "area": "蓝V直营",
         "live_start_str": "2026-08-26 09:25:43",
-        "duration_str": "24分17秒",
-        "acu": 8,
-        "pcu": 250,
-        "watch_uv": 220,
-        "show_uv": 1500,
-        "gmv": 550,
-        "pay_cert_cnt": 5,
+        "duration_str": "44分10秒",
+        "acu": 7,
+        "pcu": 423,
+        "watch_uv": 423,
+        "show_uv": 3325,
+        "gmv": 1450,
+        "pay_cert_cnt": 16,
         "like_cnt": 0,
         "comment_cnt": 0,
         "interact_rate": 0,
         "has_qrcode": false,
         "alerts": [
-          { "level": "severe", "type": "挂播预警", "desc": "在线仅8人", "detail": "在线人数较低，建议关注直播状态" },
-          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" }
+          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" },
+          { "level": "warn", "type": "低互动预警", "desc": "互动率0%", "detail": "互动率<5%，建议增加互动话术" }
         ],
         "qa_pass": false,
-        "qa_round": 1
+        "qa_round": 2
       },
       {
         "nickname": "小吉中国电信营业厅(千峰路店)",
@@ -243,11 +246,11 @@
         "city": "太原",
         "area": "万柏林区",
         "live_start_str": "2026-08-26 09:01:02",
-        "duration_str": "48分58秒",
-        "acu": 2,
-        "pcu": 176,
-        "watch_uv": 176,
-        "show_uv": 1450,
+        "duration_str": "1小时6分47秒",
+        "acu": 1,
+        "pcu": 229,
+        "watch_uv": 229,
+        "show_uv": 2322,
         "gmv": 400,
         "pay_cert_cnt": 4,
         "like_cnt": 0,
@@ -255,11 +258,12 @@
         "interact_rate": 0,
         "has_qrcode": false,
         "alerts": [
-          { "level": "severe", "type": "挂播预警", "desc": "在线仅2人", "detail": "在线人数较低，建议关注直播状态" },
-          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" }
+          { "level": "severe", "type": "挂播预警", "desc": "在线仅1人", "detail": "在线人数≤5，建议检查直播画面是否正常" },
+          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" },
+          { "level": "warn", "type": "低互动预警", "desc": "互动率0%", "detail": "互动率<5%，建议增加互动话术" }
         ],
         "qa_pass": false,
-        "qa_round": 1
+        "qa_round": 2
       },
       {
         "nickname": "太原电信福利专场",
@@ -271,11 +275,11 @@
         "city": "太原",
         "area": "清徐县",
         "live_start_str": "2026-08-26 09:39:29",
-        "duration_str": "10分33秒",
-        "acu": 0,
-        "pcu": 2,
-        "watch_uv": 2,
-        "show_uv": 20,
+        "duration_str": "28分34秒",
+        "acu": 1,
+        "pcu": 20,
+        "watch_uv": 20,
+        "show_uv": 296,
         "gmv": 0,
         "pay_cert_cnt": 0,
         "like_cnt": 0,
@@ -283,29 +287,32 @@
         "interact_rate": 0,
         "has_qrcode": false,
         "alerts": [
-          { "level": "severe", "type": "挂播预警", "desc": "在线仅0人", "detail": "在线人数较低，建议关注直播状态" },
-          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" }
+          { "level": "severe", "type": "挂播预警", "desc": "在线仅1人", "detail": "在线人数≤5，建议检查直播画面是否正常" },
+          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" },
+          { "level": "warn", "type": "低互动预警", "desc": "互动率0%", "detail": "互动率<5%，建议增加互动话术" }
         ],
         "qa_pass": false,
-        "qa_round": 1
+        "qa_round": 2
       }
     ],
     "alerts": [
-      { "level": "severe", "room": "太原电信线上营业厅", "type": "挂播预警", "desc": "在线仅8人", "detail": "在线人数较低，建议关注直播状态" },
       { "level": "severe", "room": "太原电信线上营业厅", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" },
-      { "level": "severe", "room": "小吉中国电信营业厅(千峰路店)", "type": "挂播预警", "desc": "在线仅2人", "detail": "在线人数较低，建议关注直播状态" },
+      { "level": "warn", "room": "太原电信线上营业厅", "type": "低互动预警", "desc": "互动率0%", "detail": "互动率<5%，建议增加互动话术" },
+      { "level": "severe", "room": "小吉中国电信营业厅(千峰路店)", "type": "挂播预警", "desc": "在线仅1人", "detail": "在线人数≤5，建议检查直播画面是否正常" },
       { "level": "severe", "room": "小吉中国电信营业厅(千峰路店)", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" },
-      { "level": "severe", "room": "太原电信福利专场", "type": "挂播预警", "desc": "在线仅0人", "detail": "在线人数较低，建议关注直播状态" },
-      { "level": "severe", "room": "太原电信福利专场", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" }
+      { "level": "warn", "room": "小吉中国电信营业厅(千峰路店)", "type": "低互动预警", "desc": "互动率0%", "detail": "互动率<5%，建议增加互动话术" },
+      { "level": "severe", "room": "太原电信福利专场", "type": "挂播预警", "desc": "在线仅1人", "detail": "在线人数≤5，建议检查直播画面是否正常" },
+      { "level": "severe", "room": "太原电信福利专场", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" },
+      { "level": "warn", "room": "太原电信福利专场", "type": "低互动预警", "desc": "互动率0%", "detail": "互动率<5%，建议增加互动话术" }
     ],
     "craftman_summary": {
       "total": 58,
       "active": 55,
       "has_sales": 38,
-      "week_sales": 57925.8,
-      "week_verify": 22328,
-      "week_sales_ratio": -6.4,
-      "week_verify_ratio": -27.0
+      "week_sales": 61926.79,
+      "week_verify": 21095,
+      "week_sales_ratio": 0.7,
+      "week_verify_ratio": -29.5
     },
     "craftman_live_top": [
       { "name": "亲贤街翼堆小姐姐", "douyin_id": "qxj35103510", "store": "中国电信(亲贤街营业厅)", "live_cnt": 9, "sales": 3450, "fans": 0 },
