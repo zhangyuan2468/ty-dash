@@ -1,19 +1,19 @@
 {
-  "ts": "20260826011000",
+  "ts": "20260826091637",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 0,
-    "live_cnt": 0,
-    "live_show_uv": 0,
-    "live_watch_uv": 0,
-    "live_gmv": 0,
-    "live_pay_cert_cnt": 0,
+    "live_author_cnt": 1,
+    "live_cnt": 1,
+    "live_show_uv": 289,
+    "live_watch_uv": 43,
+    "live_gmv": 194,
+    "live_pay_cert_cnt": 2,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260826011000",
-    "_stale": true
+    "_ts": "20260826091458",
+    "_stale": false
   },
   "summary": {
     "month_pay_gmv": 279457.30,
@@ -22,11 +22,11 @@
     "month_verify_cert_cnt": 1773,
     "month_refund_gmv": 186945.10,
     "month_refund_cert_cnt": 1629,
-    "month_pay_user_cnt": 2664,
+    "month_pay_user_cnt": 2788,
     "month_verify_user_cnt": 1773,
     "active_poi_ratio": 54.69,
-    "month_visit_uv": 32384,
-    "month_visit_cvr": 8.23,
+    "month_visit_uv": 33425,
+    "month_visit_cvr": 8.34,
     "month_live_gmv": 102578.30,
     "month_video_gmv": 85957.00,
     "month_live_cnt": 591,
@@ -49,10 +49,37 @@
     "week_refund_gmv_ratio": 43.39,
     "week_live_gmv_ratio": -3.36,
     "week_video_gmv_ratio": -44.09,
+    "week_live_verify_gmv": 17320.00,
+    "week_live_verify_gmv_ratio": -15.72,
+    "week_live_show_uv": 178724,
+    "week_live_watch_uv": 16737,
     "poi_total": 64,
     "poi_active": 35
   },
-  "rooms": [],
+  "rooms": [
+    {
+      "meta": {
+        "nickname": "小吉中国电信营业厅(千峰路店)",
+        "unique_id": "77159569086",
+        "room_id": "56651011fc8a248e4175ddfdabd5aebf5473910b4fcdd4e0ee79b778e0f8e866",
+        "is_live": true,
+        "gmv": 194,
+        "acu": 9,
+        "pcu": 42,
+        "live_watch_uv_td": 43,
+        "live_show_uv_td": 289,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-08-26 09:01:02",
+        "duration_str": "14分07秒",
+        "room_title": "小吉中国电信营业厅(千峰路店)正在直播",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "万柏林区",
+        "has_qrcode": false
+      }
+    }
+  ],
   "areas": {
     "小店区": { "pay_gmv": 12480, "pay_cert_cnt": 138, "verify_gmv": 6580, "verify_cert_cnt": 72, "watch_uv": 5230, "show_uv": 12800, "like_cnt": 3400, "store_cnt": 9, "active_cnt": 4, "cvr": 63.1 },
     "迎泽区": { "pay_gmv": 9870, "pay_cert_cnt": 109, "verify_gmv": 5200, "verify_cert_cnt": 58, "watch_uv": 4100, "show_uv": 10200, "like_cnt": 2800, "store_cnt": 7, "active_cnt": 3, "cvr": 31.5 },
@@ -84,18 +111,18 @@
     "total": 64
   },
   "product_ranking": [
-    { "rank": 1, "name": "到店充值100元送抽纸二选一", "pay_gmv": 114200, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 2, "name": "存300元送30G流量", "pay_gmv": 66300, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 3, "name": "到店核销有礼存50话费", "pay_gmv": 52450, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 4, "name": "到店充值100元送礼品二选一", "pay_gmv": 39900, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 5, "name": "50元得200元代金券", "pay_gmv": 2450.30, "pay_cert_cnt": 0, "type": "代金券", "verify_gmv": 0 }
+    { "rank": 1, "name": "到店充值100元送礼品二选一", "pay_gmv": 39900, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 2, "name": "存300元送30G流量", "pay_gmv": 24900, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 3, "name": "到店核销有礼存50话费", "pay_gmv": 5450, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 4, "name": "50元得200元代金券", "pay_gmv": 1400, "pay_cert_cnt": 0, "type": "代金券", "verify_gmv": 0 },
+    { "rank": 5, "name": "到店充值100元送抽纸二选一", "pay_gmv": 800, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 }
   ],
   "live_ranking": [
-    { "rank": 1, "name": "山西电信超值星期五", "unique_id": "tydx10000", "pay_gmv": 2720, "pay_cert_cnt": 37, "duration": "5小时14分", "type": "蓝V" },
-    { "rank": 2, "name": "小路(西山营业厅)", "unique_id": "58793301934", "pay_gmv": 2450, "pay_cert_cnt": 19, "duration": "2小时0分", "type": "职人" },
-    { "rank": 3, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2400, "pay_cert_cnt": 19, "duration": "1小时33分", "type": "蓝V" },
-    { "rank": 4, "name": "宵宵(黎氏阁)", "unique_id": "45003244", "pay_gmv": 2200, "pay_cert_cnt": 27, "duration": "1小时9分", "type": "职人" },
-    { "rank": 5, "name": "亲贤街翼堆小姐姐", "unique_id": "qxj35103510", "pay_gmv": 1850, "pay_cert_cnt": 20, "duration": "1小时52分", "type": "职人" }
+    { "rank": 1, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2400, "pay_cert_cnt": 19, "duration": "1小时33分32秒", "type": "蓝V" },
+    { "rank": 2, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1700, "pay_cert_cnt": 21, "duration": "2小时18分51秒", "type": "蓝V" },
+    { "rank": 3, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1559, "pay_cert_cnt": 13, "duration": "40分43秒", "type": "蓝V" },
+    { "rank": 4, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1350, "pay_cert_cnt": 14, "duration": "1小时24分29秒", "type": "蓝V" },
+    { "rank": 5, "name": "亲贤街翼堆小姐姐", "unique_id": "qxj35103510", "pay_gmv": 1350, "pay_cert_cnt": 16, "duration": "1小时30分40秒", "type": "职人" }
   ],
   "source_distribution": [
     { "name": "推荐分享场景", "value": 41530.00, "ratio": 55.91 },
@@ -115,20 +142,58 @@
     "video_ratio": 24.14,
     "video_ratio_change": -44.09,
     "other_gmv": 25868.00,
-    "other_ratio": 34.82
+    "other_ratio": 34.82,
+    "huoke_gmv": 8500.00,
+    "huoke_ratio": 11.44,
+    "huoke_ratio_change": 44.07,
+    "search_card_gmv": 8690.00,
+    "search_card_ratio": 11.70,
+    "search_card_ratio_change": 51.92
   },
   "qa": {
     "summary": {
-      "live_cnt": 0,
-      "alert_cnt": 0,
-      "severe_cnt": 0,
+      "live_cnt": 1,
+      "alert_cnt": 2,
+      "severe_cnt": 2,
       "warn_cnt": 0,
       "info_cnt": 0,
       "pass_cnt": 0,
       "qa_round": 1
     },
-    "rooms": [],
-    "alerts": [],
+    "rooms": [
+      {
+        "nickname": "小吉中国电信营业厅(千峰路店)",
+        "unique_id": "77159569086",
+        "room_id": "56651011fc8a248e4175ddfdabd5aebf5473910b4fcdd4e0ee79b778e0f8e866",
+        "is_live": true,
+        "room_title": "小吉中国电信营业厅(千峰路店)正在直播",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "万柏林区",
+        "live_start_str": "2026-08-26 09:01:02",
+        "duration_str": "14分07秒",
+        "acu": 9,
+        "pcu": 42,
+        "watch_uv": 43,
+        "show_uv": 289,
+        "gmv": 194,
+        "pay_cert_cnt": 2,
+        "like_cnt": 0,
+        "comment_cnt": 0,
+        "interact_rate": 0,
+        "has_qrcode": false,
+        "alerts": [
+          { "level": "severe", "type": "挂播预警", "desc": "在线仅9人", "detail": "在线人数较低，建议关注直播状态" },
+          { "level": "severe", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" }
+        ],
+        "qa_pass": false,
+        "qa_round": 1
+      }
+    ],
+    "alerts": [
+      { "level": "severe", "room": "小吉中国电信营业厅(千峰路店)", "type": "挂播预警", "desc": "在线仅9人", "detail": "在线人数较低，建议关注直播状态" },
+      { "level": "severe", "room": "小吉中国电信营业厅(千峰路店)", "type": "无二维码预警", "desc": "未检测到二维码/贴片", "detail": "建议补充引导转化物料" }
+    ],
     "craftman_summary": {
       "total": 53,
       "active": 47,
@@ -139,11 +204,11 @@
       "week_verify_ratio": -27.0
     },
     "craftman_live_top": [
-      { "name": "梅梅(朝阳街)", "douyin_id": "71951548365", "store": "中国电信(朝阳街营业厅)", "live_cnt": 5, "sales": 100, "fans": 10 },
+      { "name": "小吉(千峰路)", "douyin_id": "77159569086", "store": "中国电信营业厅(千峰路店)", "live_cnt": 5, "sales": 1748, "fans": 74 },
       { "name": "兴华街颜值橘长", "douyin_id": "49851400372", "store": "中国电信(兴华街营业厅)", "live_cnt": 5, "sales": 1600, "fans": 124 },
-      { "name": "小蕊(长风东街)", "douyin_id": "29266552766", "store": "中国电信(长风东街营业厅)", "live_cnt": 5, "sales": 0, "fans": 39 },
+      { "name": "梅梅(朝阳街)", "douyin_id": "71951548365", "store": "中国电信(朝阳街营业厅)", "live_cnt": 5, "sales": 100, "fans": 10 },
       { "name": "慧子(王答)", "douyin_id": "21859454204", "store": "中国电信(王答营业厅)", "live_cnt": 5, "sales": 150, "fans": 167 },
-      { "name": "小吉(千峰路)", "douyin_id": "77159569086", "store": "中国电信营业厅(千峰路店)", "live_cnt": 5, "sales": 1748, "fans": 74 }
+      { "name": "小蕊(长风东街)", "douyin_id": "29266552766", "store": "中国电信(长风东街营业厅)", "live_cnt": 5, "sales": 0, "fans": 39 }
     ]
   },
   "weekly_comparison": {
