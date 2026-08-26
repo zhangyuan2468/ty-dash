@@ -1,5 +1,5 @@
 {
-  "ts": "20260826084100",
+  "ts": "20260826085000",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 0,
@@ -12,7 +12,7 @@
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260826084100",
+    "_ts": "20260826085000",
     "_stale": false
   },
   "summary": {
@@ -33,22 +33,22 @@
     "month_pay_gmv_ratio": -2.40,
     "month_verify_gmv_ratio": 43.49,
     "month_refund_gmv_ratio": 177.43,
-    "week_pay_gmv": 74277.00,
-    "week_verify_gmv": 39848.00,
-    "week_refund_gmv": 80784.10,
-    "week_visit_uv": 7553,
-    "week_pay_user_cnt": 595,
-    "week_visit_cvr": 7.88,
-    "week_live_gmv": 30480.00,
-    "week_video_gmv": 17929.00,
-    "week_live_cnt": 180,
-    "day_avg_pay_gmv": 165.79,
-    "day_avg_verify_gmv": 88.94,
-    "week_pay_gmv_ratio": -12.05,
-    "week_verify_gmv_ratio": -13.80,
-    "week_refund_gmv_ratio": 43.39,
-    "week_live_gmv_ratio": -3.36,
-    "week_video_gmv_ratio": -44.09,
+    "week_pay_gmv": 80283.00,
+    "week_verify_gmv": 38265.00,
+    "week_refund_gmv": 75547.20,
+    "week_visit_uv": 7788,
+    "week_pay_user_cnt": 635,
+    "week_visit_cvr": 8.15,
+    "week_live_gmv": 34769.00,
+    "week_video_gmv": 20779.00,
+    "week_live_cnt": 176,
+    "day_avg_pay_gmv": 179.20,
+    "day_avg_verify_gmv": 85.41,
+    "week_pay_gmv_ratio": -6.73,
+    "week_verify_gmv_ratio": -16.86,
+    "week_refund_gmv_ratio": 19.62,
+    "week_live_gmv_ratio": 1.64,
+    "week_video_gmv_ratio": -28.15,
     "poi_total": 64,
     "poi_active": 35
   },
@@ -84,18 +84,18 @@
     "total": 64
   },
   "product_ranking": [
-    { "rank": 1, "name": "到店充值100元送礼品", "pay_gmv": 39900, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 2, "name": "存300元送30G流量", "pay_gmv": 24900, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 3, "name": "到店充值存50话费", "pay_gmv": 5450, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
-    { "rank": 4, "name": "50元得200元代金券", "pay_gmv": 1400, "pay_cert_cnt": 0, "type": "代金券", "verify_gmv": 0 },
-    { "rank": 5, "name": "到店充值100元送抽纸", "pay_gmv": 800, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 }
+    { "rank": 1, "name": "到店充值100元送礼品二选一", "pay_gmv": 41800, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 2, "name": "存300元送30G流量", "pay_gmv": 27600, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 3, "name": "到店核销有礼存50话费", "pay_gmv": 6200, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 },
+    { "rank": 4, "name": "50元得200元代金券", "pay_gmv": 1750, "pay_cert_cnt": 0, "type": "代金券", "verify_gmv": 0 },
+    { "rank": 5, "name": "300M宽带新装福利价", "pay_gmv": 1160, "pay_cert_cnt": 0, "type": "团购", "verify_gmv": 0 }
   ],
   "live_ranking": [
-    { "rank": 1, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2400, "pay_cert_cnt": 19, "duration": "1小时34分", "type": "蓝V" },
-    { "rank": 2, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1700, "pay_cert_cnt": 9, "duration": "2小时19分", "type": "蓝V" },
+    { "rank": 1, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 2400, "pay_cert_cnt": 19, "duration": "1小时33分", "type": "蓝V" },
+    { "rank": 2, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1700, "pay_cert_cnt": 9, "duration": "2小时18分", "type": "蓝V" },
     { "rank": 3, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1559, "pay_cert_cnt": 13, "duration": "40分43秒", "type": "蓝V" },
     { "rank": 4, "name": "太原电信线上营业厅", "unique_id": "tydx10000", "pay_gmv": 1350, "pay_cert_cnt": 14, "duration": "1小时24分", "type": "蓝V" },
-    { "rank": 5, "name": "亲贤街翼堆小姐姐", "unique_id": "qxj35103510", "pay_gmv": 1350, "pay_cert_cnt": 9, "duration": "1小时31分", "type": "职人" }
+    { "rank": 5, "name": "亲贤街翼堆小姐姐", "unique_id": "qxj35103510", "pay_gmv": 1350, "pay_cert_cnt": 9, "duration": "1小时30分", "type": "职人" }
   ],
   "source_distribution": [
     { "name": "推荐分享场景", "value": 41530.00, "ratio": 55.91 },
@@ -104,18 +104,18 @@
     { "name": "线下场景", "value": 1028.00, "ratio": 1.38 }
   ],
   "product_type": [
-    { "name": "团购", "value": 72577, "ratio": 97.71 },
-    { "name": "代金券", "value": 1700, "ratio": 2.29 }
+    { "name": "团购", "value": 78533, "ratio": 97.82 },
+    { "name": "代金券", "value": 1750, "ratio": 2.18 }
   ],
   "channel_distribution": {
-    "live_gmv": 30480.00,
-    "live_ratio": 41.04,
-    "live_ratio_change": -3.36,
-    "video_gmv": 17929.00,
-    "video_ratio": 24.14,
-    "video_ratio_change": -44.09,
-    "other_gmv": 25868.00,
-    "other_ratio": 34.82
+    "live_gmv": 34769.00,
+    "live_ratio": 43.30,
+    "live_ratio_change": 1.64,
+    "video_gmv": 20779.00,
+    "video_ratio": 25.88,
+    "video_ratio_change": -28.15,
+    "other_gmv": 24735.00,
+    "other_ratio": 30.82
   },
   "qa": {
     "summary": {
