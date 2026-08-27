@@ -386,6 +386,12 @@ footer { padding: var(--sp-3); text-align: center; color: var(--text-3); font-si
             <div id="liveRoomDetail" style="height:380px;overflow-y:auto" class="scrollbar"></div>
           </div>
         </div>
+        <div class="chart-row" id="trendChartRow" style="margin-top:16px">
+          <div class="chart-box">
+            <div class="chart-box-title">今日实时趋势 <span style="font-size:11px;color:var(--text-3);font-weight:400">（每5分钟采集 · 开播抖音号/观看人数/成交金额）</span></div>
+            <div id="flowTrendChart" style="height:300px"></div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -593,6 +599,7 @@ let RAW_DATA = null;
 let areaChart = null, areaPieChart = null, areaCvrChart = null;
 let summaryGaugeChart = null, summaryBarChart = null;
 let flowFunnelChart = null;
+let flowTrendChart = null;
 let productBarChart = null, productTypeChart = null;
 let liveBarChart = null, channelPieChart = null;
 let sourcePieChart = null, sourceBarChart = null;
@@ -782,6 +789,67 @@ function drawLiveRoomDetail() {
       '</div>';
   }).join('');
   document.getElementById('liveRoomDetail').innerHTML = html;
+}
+
+// ========== Render: Flow Trend (今日实时趋势) ==========
+function drawFlowTrend() {
+  const el = document.getElementById('flowTrendChart');
+  if (!el) return;
+  if (flowTrendChart) flowTrendChart.dispose();
+  flowTrendChart = echarts.init(el);
+
+  // 从全局历史数据取今日系列
+  const hist = (RAW_DATA && RAW_DATA.flow_history) || { series: {} };
+  const today = new Date();
+  const todayKey = today.getFullYear() + '-' + String(today.getMonth()+1).padStart(2,'0') + '-' + String(today.getDate()).padStart(2,'0');
+  const pts = (hist.series && hist.series[todayKey]) || [];
+
+  const times = pts.map(p => p.time || '');
+  const authorCnt = pts.map(p => num(p.author_cnt));
+  const watchUv = pts.map(p => num(p.watch_uv));
+  const gmv = pts.map(p => num(p.gmv));
+
+  // 无数据时显示占位
+  if (pts.length === 0) {
+    flowTrendChart.setOption({
+      ...EC_LIGHT,
+      title: { text: '今日暂无采集数据，等待首次数据同步…', left: 'center', top: 'middle', textStyle: { color: '#94a3b8', fontSize: 13, fontWeight: 'normal' } },
+      xAxis: { type: 'category', data: [] },
+      yAxis: { type: 'value' },
+      series: []
+    });
+    return;
+  }
+
+  flowTrendChart.setOption({
+    ...EC_LIGHT,
+    tooltip: {
+      ...EC_LIGHT.tooltip,
+      trigger: 'axis',
+      formatter: function(params) {
+        const p0 = params[0] || {};
+        const t = p0.axisValue || '';
+        let html = '<div style="font-weight:600;margin-bottom:4px">' + t + '</div>';
+        params.forEach(p => {
+          const val = p.seriesName.indexOf('金额') >= 0 ? '¥' + fmtMoney(p.value) : fmt(p.value);
+          html += '<div>' + p.marker + p.seriesName + ': <b>' + val + '</b></div>';
+        });
+        return html;
+      }
+    },
+    legend: { top: 0, textStyle: { color: '#64748b', fontSize: 12 } },
+    grid: { left: '4%', right: '4%', top: 34, bottom: '4%', containLabel: true },
+    xAxis: { type: 'category', data: times, boundaryGap: false, axisLabel: { color: '#94a3b8', fontSize: 11 } },
+    yAxis: [
+      { type: 'value', name: '人数/场', nameTextStyle: { color: '#94a3b8' }, axisLabel: { color: '#94a3b8', fontSize: 11 }, splitLine: { lineStyle: { color: '#eef2f7' } } },
+      { type: 'value', name: '金额(元)', nameTextStyle: { color: '#94a3b8' }, axisLabel: { color: '#94a3b8', fontSize: 11 }, splitLine: { show: false } }
+    ],
+    series: [
+      { name: '开播抖音号', type: 'line', data: authorCnt, smooth: true, symbolSize: 5, lineStyle: { width: 2, color: '#0A5CDE' }, itemStyle: { color: '#0A5CDE' }, areaStyle: { opacity: 0.06, color: '#0A5CDE' } },
+      { name: '观看人数', type: 'line', data: watchUv, smooth: true, symbolSize: 5, lineStyle: { width: 2, color: '#018B8D' }, itemStyle: { color: '#018B8D' }, areaStyle: { opacity: 0.06, color: '#018B8D' } },
+      { name: '成交金额', type: 'line', yAxisIndex: 1, data: gmv, smooth: true, symbolSize: 5, lineStyle: { width: 2, color: '#D4A017' }, itemStyle: { color: '#D4A017' }, areaStyle: { opacity: 0.06, color: '#D4A017' } }
+    ]
+  });
 }
 
 // ========== Render: Summary ==========
@@ -1359,6 +1427,7 @@ async function refresh() {
     document.getElementById('lastUpdate').textContent = '更新时间: ' + fmtTs(d.ts);
     document.getElementById('livingCnt').textContent = (d.rooms || []).filter(r => r.meta?.is_live).length;
     renderFlow(d.flow_realtime);
+    drawFlowTrend();
     renderSummary(d.summary);
     renderSummaryCharts(d.summary);
     renderArea(d.areas);
@@ -1392,7 +1461,7 @@ function start() {
 
 // Resize handler
 window.addEventListener('resize', () => {
-  [areaChart, areaPieChart, areaCvrChart, summaryGaugeChart, summaryBarChart, flowFunnelChart, productBarChart, productTypeChart, liveBarChart, channelPieChart, sourcePieChart, sourceBarChart].forEach(c => { if (c) c.resize(); });
+  [areaChart, areaPieChart, areaCvrChart, summaryGaugeChart, summaryBarChart, flowFunnelChart, flowTrendChart, productBarChart, productTypeChart, liveBarChart, channelPieChart, sourcePieChart, sourceBarChart].forEach(c => { if (c) c.resize(); });
 });
 </script>
 </body>
