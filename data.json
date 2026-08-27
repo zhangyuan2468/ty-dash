@@ -1,18 +1,18 @@
 {
-  "ts": "20260827140333",
+  "ts": "20260827140833",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 0,
-    "live_cnt": 0,
+    "live_author_cnt": 1,
+    "live_cnt": 1,
     "live_show_uv": 0,
     "live_watch_uv": 0,
-    "live_gmv": 0,
+    "live_gmv": 0.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827140320",
+    "_ts": "20260827140820",
     "_stale": false
   },
   "summary": {
@@ -56,7 +56,30 @@
     "poi_total": 64,
     "poi_active": 49
   },
-  "rooms": [],
+  "rooms": [
+    {
+      "meta": {
+        "nickname": "茜茜中国电信(杏花岭区旱西关营业厅)",
+        "unique_id": "28218762071",
+        "room_id": "",
+        "is_live": true,
+        "gmv": 0.0,
+        "acu": 0,
+        "pcu": 0,
+        "live_watch_uv_td": 0,
+        "live_show_uv_td": 0,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-08-27 14:07:31",
+        "duration_str": "",
+        "room_title": "茜茜中国电信(杏花岭区旱西关营业厅)正在直播",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "",
+        "has_qrcode": true
+      }
+    }
+  ],
   "areas": {
     "小店区": {
       "pay_gmv": 12480,
@@ -1266,6 +1289,15 @@
           "time": "14:03",
           "author_cnt": 0,
           "live_cnt": 0,
+          "show_uv": 0,
+          "watch_uv": 0,
+          "gmv": 0,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "14:08",
+          "author_cnt": 1,
+          "live_cnt": 1,
           "show_uv": 0,
           "watch_uv": 0,
           "gmv": 0,
