@@ -1,18 +1,18 @@
 {
-  "ts": "20260827112333",
+  "ts": "20260827112835",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 0,
-    "live_cnt": 0,
+    "live_author_cnt": 2,
+    "live_cnt": 2,
     "live_show_uv": 0,
-    "live_watch_uv": 0,
-    "live_gmv": 0,
+    "live_watch_uv": 404,
+    "live_gmv": 700.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827112320",
+    "_ts": "20260827112821",
     "_stale": false
   },
   "summary": {
@@ -56,7 +56,52 @@
     "poi_total": 64,
     "poi_active": 49
   },
-  "rooms": [],
+  "rooms": [
+    {
+      "meta": {
+        "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": true,
+        "gmv": 700.0,
+        "acu": 0,
+        "pcu": 0,
+        "live_watch_uv_td": 401,
+        "live_show_uv_td": 0,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-08-27 10:42:58",
+        "duration_str": "",
+        "room_title": "太原电信线上营业厅正在直播",
+        "room_type_tag": "蓝V",
+        "city": "太原",
+        "area": "",
+        "has_qrcode": true
+      }
+    },
+    {
+      "meta": {
+        "nickname": "婷婷中国电信(富力城营业厅)",
+        "unique_id": "44244905326",
+        "room_id": "",
+        "is_live": true,
+        "gmv": 0.0,
+        "acu": 0,
+        "pcu": 0,
+        "live_watch_uv_td": 3,
+        "live_show_uv_td": 0,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-08-27 11:00:31",
+        "duration_str": "",
+        "room_title": "婷婷中国电信(富力城营业厅)正在直播",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "",
+        "has_qrcode": true
+      }
+    }
+  ],
   "areas": {
     "小店区": {
       "pay_gmv": 12480,
@@ -422,15 +467,142 @@
   },
   "qa": {
     "summary": {
-      "live_cnt": 0,
+      "live_cnt": 9,
       "alert_cnt": 0,
       "severe_cnt": 0,
       "warn_cnt": 0,
       "info_cnt": 0,
-      "pass_cnt": 0,
+      "pass_cnt": 9,
       "qa_round": 1
     },
-    "rooms": [],
+    "rooms": [
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-26 09:25:49",
+        "duration_str": "1小时43分0秒",
+        "gmv": 2950.0,
+        "pay_cert_cnt": 25,
+        "watch_uv": 775,
+        "gpm": 3371.43,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-25 15:28:59",
+        "duration_str": "1小时33分32秒",
+        "gmv": 2400.0,
+        "pay_cert_cnt": 19,
+        "watch_uv": 747,
+        "gpm": 2846.98,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-20 09:15:14",
+        "duration_str": "2小时18分51秒",
+        "gmv": 1700.0,
+        "pay_cert_cnt": 21,
+        "watch_uv": 753,
+        "gpm": 1876.38,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-25 10:16:14",
+        "duration_str": "40分43秒",
+        "gmv": 1559.0,
+        "pay_cert_cnt": 13,
+        "watch_uv": 244,
+        "gpm": 5669.09,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-24 16:19:37",
+        "duration_str": "1小时24分29秒",
+        "gmv": 1350.0,
+        "pay_cert_cnt": 14,
+        "watch_uv": 575,
+        "gpm": 2073.73,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "官方手机福利直播别错过！",
+        "room_type_tag": "职人",
+        "is_live": false,
+        "live_start_str": "2026-08-24 14:38:24",
+        "duration_str": "1小时30分40秒",
+        "gmv": 1350.0,
+        "pay_cert_cnt": 16,
+        "watch_uv": 273,
+        "gpm": 4313.1,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-24 10:53:52",
+        "duration_str": "1小时5分16秒",
+        "gmv": 1300.0,
+        "pay_cert_cnt": 15,
+        "watch_uv": 565,
+        "gpm": 2003.08,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-21 15:47:12",
+        "duration_str": "1小时35分35秒",
+        "gmv": 1180.0,
+        "pay_cert_cnt": 7,
+        "watch_uv": 436,
+        "gpm": 2408.16,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "快进直播间有八卦！",
+        "room_type_tag": "职人",
+        "is_live": false,
+        "live_start_str": "2026-08-23 13:51:03",
+        "duration_str": "2小时1分59秒",
+        "gmv": 1150.0,
+        "pay_cert_cnt": 10,
+        "watch_uv": 255,
+        "gpm": 3951.89,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      }
+    ],
     "alerts": [],
     "craftman_summary": {
       "total": 5788,
@@ -462,7 +634,468 @@
   "weekly_comparison": {
     "week_label": "8月17日-8月23日",
     "last_week_label": "8月10日-8月16日",
-    "stores": []
+    "stores": [
+      {
+        "name": "义井街营业厅",
+        "area": "义井片区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 3750,
+          "pay_cert_cnt": 42,
+          "verify_gmv": 2625,
+          "verify_cert_cnt": 29,
+          "live_cnt": 3,
+          "watch_uv": 1200,
+          "cvr": 5.25
+        },
+        "last_week": {
+          "pay_gmv": 2600,
+          "pay_cert_cnt": 28,
+          "verify_gmv": 1820,
+          "verify_cert_cnt": 20,
+          "live_cnt": 2,
+          "watch_uv": 950,
+          "cvr": 4.31
+        }
+      },
+      {
+        "name": "亲贤街营业厅",
+        "area": "亲贤片区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 3270,
+          "pay_cert_cnt": 36,
+          "verify_gmv": 2290,
+          "verify_cert_cnt": 25,
+          "live_cnt": 4,
+          "watch_uv": 1500,
+          "cvr": 4.1
+        },
+        "last_week": {
+          "pay_gmv": 3800,
+          "pay_cert_cnt": 42,
+          "verify_gmv": 2660,
+          "verify_cert_cnt": 29,
+          "live_cnt": 3,
+          "watch_uv": 1100,
+          "cvr": 4.85
+        }
+      },
+      {
+        "name": "晋阳街营业厅",
+        "area": "小店区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 3170,
+          "pay_cert_cnt": 35,
+          "verify_gmv": 2220,
+          "verify_cert_cnt": 24,
+          "live_cnt": 2,
+          "watch_uv": 800,
+          "cvr": 6.25
+        },
+        "last_week": {
+          "pay_gmv": 2900,
+          "pay_cert_cnt": 32,
+          "verify_gmv": 2030,
+          "verify_cert_cnt": 22,
+          "live_cnt": 3,
+          "watch_uv": 1000,
+          "cvr": 5.8
+        }
+      },
+      {
+        "name": "北大街营业厅",
+        "area": "杏花岭区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 3070,
+          "pay_cert_cnt": 34,
+          "verify_gmv": 2150,
+          "verify_cert_cnt": 23,
+          "live_cnt": 2,
+          "watch_uv": 700,
+          "cvr": 5.5
+        },
+        "last_week": {
+          "pay_gmv": 3200,
+          "pay_cert_cnt": 36,
+          "verify_gmv": 2240,
+          "verify_cert_cnt": 25,
+          "live_cnt": 2,
+          "watch_uv": 750,
+          "cvr": 5.33
+        }
+      },
+      {
+        "name": "长风东街营业厅",
+        "area": "长风片区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 3020,
+          "pay_cert_cnt": 33,
+          "verify_gmv": 2115,
+          "verify_cert_cnt": 23,
+          "live_cnt": 3,
+          "watch_uv": 900,
+          "cvr": 4.56
+        },
+        "last_week": {
+          "pay_gmv": 2500,
+          "pay_cert_cnt": 27,
+          "verify_gmv": 1750,
+          "verify_cert_cnt": 19,
+          "live_cnt": 2,
+          "watch_uv": 650,
+          "cvr": 5.38
+        }
+      },
+      {
+        "name": "兴华街营业厅",
+        "area": "万柏林区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 2800,
+          "pay_cert_cnt": 31,
+          "verify_gmv": 1960,
+          "verify_cert_cnt": 21,
+          "live_cnt": 5,
+          "watch_uv": 1400,
+          "cvr": 3.57
+        },
+        "last_week": {
+          "pay_gmv": 3100,
+          "pay_cert_cnt": 34,
+          "verify_gmv": 2170,
+          "verify_cert_cnt": 24,
+          "live_cnt": 5,
+          "watch_uv": 1600,
+          "cvr": 3.56
+        }
+      },
+      {
+        "name": "朝阳街营业厅",
+        "area": "迎泽区",
+        "rating": "金牌",
+        "this_week": {
+          "pay_gmv": 2500,
+          "pay_cert_cnt": 28,
+          "verify_gmv": 1750,
+          "verify_cert_cnt": 19,
+          "live_cnt": 5,
+          "watch_uv": 2000,
+          "cvr": 2.5
+        },
+        "last_week": {
+          "pay_gmv": 2200,
+          "pay_cert_cnt": 24,
+          "verify_gmv": 1540,
+          "verify_cert_cnt": 17,
+          "live_cnt": 3,
+          "watch_uv": 1200,
+          "cvr": 3.33
+        }
+      },
+      {
+        "name": "千峰路营业厅",
+        "area": "万柏林区",
+        "rating": "银牌",
+        "this_week": {
+          "pay_gmv": 2300,
+          "pay_cert_cnt": 25,
+          "verify_gmv": 1610,
+          "verify_cert_cnt": 17,
+          "live_cnt": 5,
+          "watch_uv": 1100,
+          "cvr": 4.09
+        },
+        "last_week": {
+          "pay_gmv": 1850,
+          "pay_cert_cnt": 20,
+          "verify_gmv": 1295,
+          "verify_cert_cnt": 14,
+          "live_cnt": 3,
+          "watch_uv": 800,
+          "cvr": 4.06
+        }
+      },
+      {
+        "name": "王答营业厅",
+        "area": "尖草坪区",
+        "rating": "银牌",
+        "this_week": {
+          "pay_gmv": 1800,
+          "pay_cert_cnt": 20,
+          "verify_gmv": 1260,
+          "verify_cert_cnt": 14,
+          "live_cnt": 5,
+          "watch_uv": 850,
+          "cvr": 2.35
+        },
+        "last_week": {
+          "pay_gmv": 2400,
+          "pay_cert_cnt": 26,
+          "verify_gmv": 1680,
+          "verify_cert_cnt": 18,
+          "live_cnt": 4,
+          "watch_uv": 950,
+          "cvr": 2.74
+        }
+      },
+      {
+        "name": "西山营业厅",
+        "area": "西山片区",
+        "rating": "银牌",
+        "this_week": {
+          "pay_gmv": 1500,
+          "pay_cert_cnt": 17,
+          "verify_gmv": 1050,
+          "verify_cert_cnt": 11,
+          "live_cnt": 3,
+          "watch_uv": 500,
+          "cvr": 3.4
+        },
+        "last_week": {
+          "pay_gmv": 1200,
+          "pay_cert_cnt": 13,
+          "verify_gmv": 840,
+          "verify_cert_cnt": 9,
+          "live_cnt": 2,
+          "watch_uv": 400,
+          "cvr": 3.25
+        }
+      },
+      {
+        "name": "黎氏阁营业厅",
+        "area": "万柏林区",
+        "rating": "银牌",
+        "this_week": {
+          "pay_gmv": 1400,
+          "pay_cert_cnt": 15,
+          "verify_gmv": 980,
+          "verify_cert_cnt": 10,
+          "live_cnt": 2,
+          "watch_uv": 600,
+          "cvr": 2.5
+        },
+        "last_week": {
+          "pay_gmv": 1600,
+          "pay_cert_cnt": 18,
+          "verify_gmv": 1120,
+          "verify_cert_cnt": 12,
+          "live_cnt": 3,
+          "watch_uv": 700,
+          "cvr": 3.14
+        }
+      },
+      {
+        "name": "富力城营业厅",
+        "area": "杏花岭区",
+        "rating": "银牌",
+        "this_week": {
+          "pay_gmv": 1200,
+          "pay_cert_cnt": 13,
+          "verify_gmv": 840,
+          "verify_cert_cnt": 9,
+          "live_cnt": 3,
+          "watch_uv": 450,
+          "cvr": 2.89
+        },
+        "last_week": {
+          "pay_gmv": 900,
+          "pay_cert_cnt": 10,
+          "verify_gmv": 630,
+          "verify_cert_cnt": 7,
+          "live_cnt": 1,
+          "watch_uv": 300,
+          "cvr": 3.33
+        }
+      },
+      {
+        "name": "人民路营业厅",
+        "area": "小店区",
+        "rating": "铜牌",
+        "this_week": {
+          "pay_gmv": 800,
+          "pay_cert_cnt": 9,
+          "verify_gmv": 560,
+          "verify_cert_cnt": 6,
+          "live_cnt": 2,
+          "watch_uv": 300,
+          "cvr": 3.0
+        },
+        "last_week": {
+          "pay_gmv": 1500,
+          "pay_cert_cnt": 17,
+          "verify_gmv": 1050,
+          "verify_cert_cnt": 11,
+          "live_cnt": 3,
+          "watch_uv": 500,
+          "cvr": 3.4
+        }
+      },
+      {
+        "name": "新世纪营业厅",
+        "area": "迎泽区",
+        "rating": "铜牌",
+        "this_week": {
+          "pay_gmv": 700,
+          "pay_cert_cnt": 8,
+          "verify_gmv": 490,
+          "verify_cert_cnt": 5,
+          "live_cnt": 2,
+          "watch_uv": 250,
+          "cvr": 3.2
+        },
+        "last_week": {
+          "pay_gmv": 650,
+          "pay_cert_cnt": 7,
+          "verify_gmv": 455,
+          "verify_cert_cnt": 5,
+          "live_cnt": 1,
+          "watch_uv": 200,
+          "cvr": 3.5
+        }
+      },
+      {
+        "name": "学府街营业厅",
+        "area": "学府片区",
+        "rating": "铜牌",
+        "this_week": {
+          "pay_gmv": 500,
+          "pay_cert_cnt": 6,
+          "verify_gmv": 350,
+          "verify_cert_cnt": 4,
+          "live_cnt": 1,
+          "watch_uv": 150,
+          "cvr": 4.0
+        },
+        "last_week": {
+          "pay_gmv": 0,
+          "pay_cert_cnt": 0,
+          "verify_gmv": 0,
+          "verify_cert_cnt": 0,
+          "live_cnt": 0,
+          "watch_uv": 0,
+          "cvr": 0
+        }
+      },
+      {
+        "name": "晋源营业厅",
+        "area": "晋源区",
+        "rating": "铜牌",
+        "this_week": {
+          "pay_gmv": 300,
+          "pay_cert_cnt": 3,
+          "verify_gmv": 210,
+          "verify_cert_cnt": 2,
+          "live_cnt": 1,
+          "watch_uv": 100,
+          "cvr": 3.0
+        },
+        "last_week": {
+          "pay_gmv": 600,
+          "pay_cert_cnt": 7,
+          "verify_gmv": 420,
+          "verify_cert_cnt": 4,
+          "live_cnt": 2,
+          "watch_uv": 200,
+          "cvr": 3.5
+        }
+      },
+      {
+        "name": "古交营业厅",
+        "area": "古交市",
+        "rating": "铜牌",
+        "this_week": {
+          "pay_gmv": 200,
+          "pay_cert_cnt": 2,
+          "verify_gmv": 140,
+          "verify_cert_cnt": 1,
+          "live_cnt": 0,
+          "watch_uv": 0,
+          "cvr": 0
+        },
+        "last_week": {
+          "pay_gmv": 450,
+          "pay_cert_cnt": 5,
+          "verify_gmv": 315,
+          "verify_cert_cnt": 3,
+          "live_cnt": 1,
+          "watch_uv": 150,
+          "cvr": 3.33
+        }
+      },
+      {
+        "name": "龙城营业厅",
+        "area": "龙城片区",
+        "rating": "无牌",
+        "this_week": {
+          "pay_gmv": 0,
+          "pay_cert_cnt": 0,
+          "verify_gmv": 0,
+          "verify_cert_cnt": 0,
+          "live_cnt": 0,
+          "watch_uv": 0,
+          "cvr": 0
+        },
+        "last_week": {
+          "pay_gmv": 800,
+          "pay_cert_cnt": 9,
+          "verify_gmv": 560,
+          "verify_cert_cnt": 6,
+          "live_cnt": 2,
+          "watch_uv": 300,
+          "cvr": 3.0
+        }
+      },
+      {
+        "name": "长风西街营业厅",
+        "area": "长风片区",
+        "rating": "无牌",
+        "this_week": {
+          "pay_gmv": 0,
+          "pay_cert_cnt": 0,
+          "verify_gmv": 0,
+          "verify_cert_cnt": 0,
+          "live_cnt": 0,
+          "watch_uv": 0,
+          "cvr": 0
+        },
+        "last_week": {
+          "pay_gmv": 0,
+          "pay_cert_cnt": 0,
+          "verify_gmv": 0,
+          "verify_cert_cnt": 0,
+          "live_cnt": 0,
+          "watch_uv": 0,
+          "cvr": 0
+        }
+      },
+      {
+        "name": "南内环营业厅",
+        "area": "迎泽区",
+        "rating": "无牌",
+        "this_week": {
+          "pay_gmv": 0,
+          "pay_cert_cnt": 0,
+          "verify_gmv": 0,
+          "verify_cert_cnt": 0,
+          "live_cnt": 0,
+          "watch_uv": 0,
+          "cvr": 0
+        },
+        "last_week": {
+          "pay_gmv": 350,
+          "pay_cert_cnt": 4,
+          "verify_gmv": 245,
+          "verify_cert_cnt": 2,
+          "live_cnt": 1,
+          "watch_uv": 100,
+          "cvr": 4.0
+        }
+      }
+    ]
   },
   "flow_history": {
     "series": {
@@ -510,6 +1143,15 @@
           "show_uv": 0,
           "watch_uv": 0,
           "gmv": 0,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "11:28",
+          "author_cnt": 2,
+          "live_cnt": 2,
+          "show_uv": 0,
+          "watch_uv": 404,
+          "gmv": 700,
           "pay_cert_cnt": 0
         }
       ]
