@@ -1,5 +1,5 @@
 {
-  "ts": "20260827124334",
+  "ts": "20260827124202",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 0,
@@ -261,7 +261,7 @@
       "area": "迎泽区",
       "pay_gmv": 3080,
       "pay_cert_cnt": 0,
-      "ratio": 0,
+      "ratio": 18.8,
       "rating": "金牌"
     },
     {
@@ -270,7 +270,7 @@
       "area": "杏花岭区",
       "pay_gmv": 3000,
       "pay_cert_cnt": 0,
-      "ratio": 0,
+      "ratio": 9.31,
       "rating": "金牌"
     }
   ],
@@ -284,42 +284,42 @@
   "product_ranking": [
     {
       "rank": 1,
-      "name": "【核销有礼】到店充值100元话费送礼品二选一【山西电信】",
-      "pay_gmv": 114200,
+      "name": "【到店有礼】充值100元送抽纸",
+      "pay_gmv": 47700,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 2,
-      "name": "【到店充值】存300元话费送30G流量【山西电信】",
-      "pay_gmv": 76500,
+      "name": "【到店有礼】充值100元送礼品",
+      "pay_gmv": 32500,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 3,
-      "name": "【到店核销有礼】到店充值存50话费【太原电信】",
-      "pay_gmv": 55600,
+      "name": "【到店核销有礼】存50话费",
+      "pay_gmv": 19000,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 4,
-      "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】",
-      "pay_gmv": 54800,
+      "name": "【到店充值】存300话费",
+      "pay_gmv": 10200,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 5,
-      "name": "50元得200元代金券到店领纸品福利【山西电信】",
-      "pay_gmv": 3150.4,
+      "name": "宽带特惠",
+      "pay_gmv": 1210,
       "pay_cert_cnt": 0,
-      "type": "代金券",
+      "type": "团购",
       "verify_gmv": 0
     }
   ],
@@ -1111,6 +1111,15 @@
         },
         {
           "time": "12:38",
+          "author_cnt": 0,
+          "live_cnt": 0,
+          "show_uv": 0,
+          "watch_uv": 0,
+          "gmv": 0,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "12:42",
           "author_cnt": 0,
           "live_cnt": 0,
           "show_uv": 0,
