@@ -1,5 +1,5 @@
 {
-  "ts": "20260827112835",
+  "ts": "20260827111000",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 2,
@@ -605,8 +605,8 @@
     ],
     "alerts": [],
     "craftman_summary": {
-      "total": 5788,
-      "active": 36,
+      "total": 62,
+      "active": 55,
       "has_sales": 36,
       "week_sales": 58917.79,
       "week_verify": 20095.0,
