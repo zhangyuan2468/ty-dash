@@ -1,18 +1,18 @@
 {
-  "ts": "20260827104815",
+  "ts": "20260827105901",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 3,
     "live_cnt": 3,
     "live_show_uv": 0,
-    "live_watch_uv": 168,
-    "live_gmv": 550.0,
+    "live_watch_uv": 347,
+    "live_gmv": 750.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827104801",
+    "_ts": "20260827105846",
     "_stale": false
   },
   "summary": {
@@ -66,7 +66,7 @@
         "gmv": 550.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 151,
+        "live_watch_uv_td": 183,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
@@ -85,10 +85,10 @@
         "unique_id": "tydx10000",
         "room_id": "",
         "is_live": true,
-        "gmv": 0.0,
+        "gmv": 100.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 2,
+        "live_watch_uv_td": 125,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
@@ -107,10 +107,10 @@
         "unique_id": "49851400372",
         "room_id": "",
         "is_live": true,
-        "gmv": 0.0,
+        "gmv": 100.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 15,
+        "live_watch_uv_td": 39,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
@@ -627,12 +627,12 @@
     ],
     "alerts": [],
     "craftman_summary": {
-      "total": 5786,
+      "total": 10,
       "active": 8,
       "has_sales": 36,
       "week_sales": 58917.79,
       "week_verify": 20095.0,
-      "remain": 4214,
+      "remain": 4212,
       "limit": 10000
     },
     "craftman_live_top": [
@@ -1138,6 +1138,15 @@
           "show_uv": 0,
           "watch_uv": 168,
           "gmv": 550,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "10:59",
+          "author_cnt": 3,
+          "live_cnt": 3,
+          "show_uv": 0,
+          "watch_uv": 347,
+          "gmv": 750,
           "pay_cert_cnt": 0
         }
       ]
