@@ -1,18 +1,18 @@
 {
-  "ts": "20260827115333",
+  "ts": "20260827115835",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 1,
     "live_cnt": 1,
     "live_show_uv": 0,
-    "live_watch_uv": 12,
+    "live_watch_uv": 13,
     "live_gmv": 0.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827115320",
+    "_ts": "20260827115821",
     "_stale": false
   },
   "summary": {
@@ -66,7 +66,7 @@
         "gmv": 0.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 12,
+        "live_watch_uv_td": 13,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
@@ -1174,6 +1174,15 @@
           "live_cnt": 1,
           "show_uv": 0,
           "watch_uv": 12,
+          "gmv": 0,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "11:58",
+          "author_cnt": 1,
+          "live_cnt": 1,
+          "show_uv": 0,
+          "watch_uv": 13,
           "gmv": 0,
           "pay_cert_cnt": 0
         }
