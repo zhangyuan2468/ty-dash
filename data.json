@@ -1,22 +1,22 @@
 {
-  "ts": "20260827105901",
+  "ts": "20260827111000",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 3,
     "live_cnt": 3,
-    "live_show_uv": 0,
-    "live_watch_uv": 347,
+    "live_show_uv": 3468,
+    "live_watch_uv": 514,
     "live_gmv": 750.0,
-    "live_pay_cert_cnt": 0,
+    "live_pay_cert_cnt": 8,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827105846",
+    "_ts": "20260827111000",
     "_stale": false
   },
   "summary": {
-    "month_pay_gmv": 309992.9,
+    "month_pay_gmv": 309992.4,
     "month_pay_cert_cnt": 0,
     "month_verify_gmv": 172640.1,
     "month_verify_cert_cnt": 0,
@@ -41,7 +41,7 @@
     "week_visit_cvr": 9.27,
     "week_live_gmv": 39958.1,
     "week_video_gmv": 19170.0,
-    "week_live_cnt": 168,
+    "week_live_cnt": 176,
     "day_avg_pay_gmv": 184.73,
     "day_avg_verify_gmv": 83.02,
     "week_pay_gmv_ratio": -7.17,
@@ -49,10 +49,10 @@
     "week_refund_gmv_ratio": 45.89,
     "week_live_gmv_ratio": 10.75,
     "week_video_gmv_ratio": -36.69,
-    "week_live_verify_gmv": 17530.0,
-    "week_live_verify_gmv_ratio": -15.08,
-    "week_live_show_uv": 192289,
-    "week_live_watch_uv": 19842,
+    "week_live_verify_gmv": 17320.0,
+    "week_live_verify_gmv_ratio": -15.72,
+    "week_live_show_uv": 178724,
+    "week_live_watch_uv": 16737,
     "poi_total": 64,
     "poi_active": 49
   },
@@ -61,21 +61,21 @@
       "meta": {
         "nickname": "营业员小姐姐中国电信(火车站营业厅)",
         "unique_id": "33181611825",
-        "room_id": "",
+        "room_id": "b5a3ec980cd6607a69d769bfb016fe443c2ca043c4f45e62ed43e73008301541",
         "is_live": true,
         "gmv": 550.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 183,
-        "live_show_uv_td": 0,
+        "acu": 1,
+        "pcu": 195,
+        "live_watch_uv_td": 195,
+        "live_show_uv_td": 1287,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-27 10:03:56",
-        "duration_str": "",
+        "live_start_str": "2026-08-27 10:03:57",
+        "duration_str": "1小时6分56秒",
         "room_title": "营业员小姐姐中国电信(火车站营业厅)正在直播",
         "room_type_tag": "职人",
         "city": "太原",
-        "area": "",
+        "area": "迎泽区",
         "has_qrcode": true
       }
     },
@@ -83,21 +83,21 @@
       "meta": {
         "nickname": "太原电信线上营业厅",
         "unique_id": "tydx10000",
-        "room_id": "",
+        "room_id": "136dec0982cb94f342c5212e9c90251eaf69b80ce7cf28fbd437103ac7d77869",
         "is_live": true,
         "gmv": 100.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 125,
-        "live_show_uv_td": 0,
+        "acu": 8,
+        "pcu": 256,
+        "live_watch_uv_td": 256,
+        "live_show_uv_td": 1812,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
         "live_start_str": "2026-08-27 10:42:58",
-        "duration_str": "",
+        "duration_str": "27分59秒",
         "room_title": "太原电信线上营业厅正在直播",
         "room_type_tag": "蓝V",
         "city": "太原",
-        "area": "",
+        "area": "蓝V直营",
         "has_qrcode": true
       }
     },
@@ -105,21 +105,21 @@
       "meta": {
         "nickname": "兴华街颜值橘长中国电信(兴华街营业厅)",
         "unique_id": "49851400372",
-        "room_id": "",
+        "room_id": "e7bafb70b65155f9e1a6ea0f85634d7622087e027ce58741cf427193eac1d3b3",
         "is_live": true,
         "gmv": 100.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 39,
-        "live_show_uv_td": 0,
+        "acu": 2,
+        "pcu": 63,
+        "live_watch_uv_td": 63,
+        "live_show_uv_td": 369,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-27 10:34:37",
-        "duration_str": "",
+        "live_start_str": "2026-08-27 10:34:38",
+        "duration_str": "36分11秒",
         "room_title": "兴华街颜值橘长中国电信(兴华街营业厅)正在直播",
         "room_type_tag": "职人",
         "city": "太原",
-        "area": "",
+        "area": "万柏林区",
         "has_qrcode": true
       }
     }
@@ -351,7 +351,7 @@
   "product_ranking": [
     {
       "rank": 1,
-      "name": "【到店有礼】到店充值100元话费送抽纸二选一【山西电信】",
+      "name": "【核销有礼】到店充值100元话费送礼品二选一【山西电信】",
       "pay_gmv": 114200,
       "pay_cert_cnt": 0,
       "type": "团购",
@@ -490,18 +490,36 @@
   "qa": {
     "summary": {
       "live_cnt": 9,
-      "alert_cnt": 0,
-      "severe_cnt": 0,
-      "warn_cnt": 0,
+      "alert_cnt": 14,
+      "severe_cnt": 9,
+      "warn_cnt": 5,
       "info_cnt": 0,
-      "pass_cnt": 9,
+      "pass_cnt": 0,
       "qa_round": 1
     },
     "rooms": [
       {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
+        "live_start_str": "2026-08-26 14:53:21",
+        "duration_str": "2小时57分26秒",
+        "gmv": 4250.0,
+        "pay_cert_cnt": 42,
+        "watch_uv": 1230,
+        "gpm": 2416.67,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
+        "room_type_tag": "蓝V",
         "live_start_str": "2026-08-26 09:25:49",
         "duration_str": "1小时43分0秒",
         "gmv": 2950.0,
@@ -514,8 +532,10 @@
       },
       {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
         "live_start_str": "2026-08-25 15:28:59",
         "duration_str": "1小时33分32秒",
         "gmv": 2400.0,
@@ -528,8 +548,10 @@
       },
       {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
         "live_start_str": "2026-08-20 09:15:14",
         "duration_str": "2小时18分51秒",
         "gmv": 1700.0,
@@ -542,8 +564,10 @@
       },
       {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
         "live_start_str": "2026-08-25 10:16:14",
         "duration_str": "40分43秒",
         "gmv": 1559.0,
@@ -556,8 +580,10 @@
       },
       {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
         "live_start_str": "2026-08-24 16:19:37",
         "duration_str": "1小时24分29秒",
         "gmv": 1350.0,
@@ -569,23 +595,11 @@
         "qa_round": 1
       },
       {
-        "nickname": "官方手机福利直播别错过！",
-        "room_type_tag": "职人",
-        "is_live": false,
-        "live_start_str": "2026-08-24 14:38:24",
-        "duration_str": "1小时30分40秒",
-        "gmv": 1350.0,
-        "pay_cert_cnt": 16,
-        "watch_uv": 273,
-        "gpm": 4313.1,
-        "alerts": [],
-        "qa_pass": true,
-        "qa_round": 1
-      },
-      {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
         "live_start_str": "2026-08-24 10:53:52",
         "duration_str": "1小时5分16秒",
         "gmv": 1300.0,
@@ -598,8 +612,10 @@
       },
       {
         "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
+        "is_live": false,
         "room_type_tag": "蓝V",
-        "is_live": true,
         "live_start_str": "2026-08-21 15:47:12",
         "duration_str": "1小时35分35秒",
         "gmv": 1180.0,
@@ -611,9 +627,11 @@
         "qa_round": 1
       },
       {
-        "nickname": "快进直播间有八卦！",
-        "room_type_tag": "职人",
+        "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
+        "room_id": "",
         "is_live": false,
+        "room_type_tag": "蓝V",
         "live_start_str": "2026-08-23 13:51:03",
         "duration_str": "2小时1分59秒",
         "gmv": 1150.0,
@@ -627,29 +645,56 @@
     ],
     "alerts": [],
     "craftman_summary": {
-      "total": 10,
-      "active": 8,
+      "total": 62,
+      "active": 55,
       "has_sales": 36,
       "week_sales": 58917.79,
       "week_verify": 20095.0,
-      "remain": 4212,
+      "week_sales_ratio": -8.9,
+      "week_verify_ratio": -31.6,
+      "remain": 4214,
       "limit": 10000
     },
     "craftman_live_top": [
       {
-        "nickname": "茜茜(杏花岭区旱西关营业厅)",
-        "douyin_id": "28218762071",
-        "sales": 1150.0
+        "name": "小吉中国电信(千峰路店)",
+        "douyin_id": "",
+        "store": "千峰路营业厅",
+        "live_cnt": 3,
+        "sales": 1995,
+        "fans": 0
       },
       {
-        "nickname": "梅梅(朝阳街营业厅)",
-        "douyin_id": "71951548365",
-        "sales": 300.0
+        "name": "婷婷中国电信(富力城营业厅)",
+        "douyin_id": "",
+        "store": "富力城营业厅",
+        "live_cnt": 2,
+        "sales": 1950,
+        "fans": 0
       },
       {
-        "nickname": "店长小姐姐(新建南路营业厅)",
-        "douyin_id": "41920541559",
-        "sales": 200.0
+        "name": "文兴路翼堆小姐姐",
+        "douyin_id": "",
+        "store": "文兴路营业厅",
+        "live_cnt": 2,
+        "sales": 1350,
+        "fans": 0
+      },
+      {
+        "name": "兴华街颜值橘长",
+        "douyin_id": "",
+        "store": "兴华街营业厅",
+        "live_cnt": 2,
+        "sales": 1250,
+        "fans": 0
+      },
+      {
+        "name": "小路中国电信(西山营业厅)",
+        "douyin_id": "",
+        "store": "西山营业厅",
+        "live_cnt": 3,
+        "sales": 1250,
+        "fans": 0
       }
     ]
   },
@@ -1126,8 +1171,8 @@
           "time": "10:20",
           "author_cnt": 1,
           "live_cnt": 1,
-          "show_uv": 192289,
-          "watch_uv": 18,
+          "show_uv": 0,
+          "watch_uv": 0,
           "gmv": 0,
           "pay_cert_cnt": 0
         },
@@ -1141,13 +1186,22 @@
           "pay_cert_cnt": 0
         },
         {
-          "time": "10:59",
+          "time": "10:50",
           "author_cnt": 3,
           "live_cnt": 3,
-          "show_uv": 0,
-          "watch_uv": 347,
+          "show_uv": 1338,
+          "watch_uv": 214,
+          "gmv": 550,
+          "pay_cert_cnt": 6
+        },
+        {
+          "time": "11:10",
+          "author_cnt": 3,
+          "live_cnt": 3,
+          "show_uv": 3468,
+          "watch_uv": 514,
           "gmv": 750,
-          "pay_cert_cnt": 0
+          "pay_cert_cnt": 8
         }
       ]
     }
