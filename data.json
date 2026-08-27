@@ -1,18 +1,18 @@
 {
-  "ts": "20260827141833",
+  "ts": "20260827142333",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 1,
     "live_cnt": 1,
     "live_show_uv": 0,
-    "live_watch_uv": 4,
-    "live_gmv": 0.0,
+    "live_watch_uv": 15,
+    "live_gmv": 100.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827141821",
+    "_ts": "20260827142320",
     "_stale": false
   },
   "summary": {
@@ -63,10 +63,10 @@
         "unique_id": "28218762071",
         "room_id": "",
         "is_live": true,
-        "gmv": 0.0,
+        "gmv": 100.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 4,
+        "live_watch_uv_td": 15,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
@@ -1319,6 +1319,15 @@
           "show_uv": 0,
           "watch_uv": 4,
           "gmv": 0,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "14:23",
+          "author_cnt": 1,
+          "live_cnt": 1,
+          "show_uv": 0,
+          "watch_uv": 15,
+          "gmv": 100,
           "pay_cert_cnt": 0
         }
       ]
