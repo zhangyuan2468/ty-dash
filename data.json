@@ -1,18 +1,18 @@
 {
-  "ts": "20260827142333",
+  "ts": "20260827144643",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 1,
-    "live_cnt": 1,
+    "live_author_cnt": 3,
+    "live_cnt": 3,
     "live_show_uv": 0,
-    "live_watch_uv": 15,
+    "live_watch_uv": 20,
     "live_gmv": 100.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827142320",
+    "_ts": "20260827144643",
     "_stale": false
   },
   "summary": {
@@ -66,13 +66,57 @@
         "gmv": 100.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 15,
+        "live_watch_uv_td": 20,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
         "live_start_str": "2026-08-27 14:07:31",
         "duration_str": "",
         "room_title": "茜茜中国电信(杏花岭区旱西关营业厅)正在直播",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "",
+        "has_qrcode": true
+      }
+    },
+    {
+      "meta": {
+        "nickname": "太原清徐阳光花园小姐姐(宽带手机号卡)",
+        "unique_id": "52578069100",
+        "room_id": "",
+        "is_live": true,
+        "gmv": 0.0,
+        "acu": 0,
+        "pcu": 0,
+        "live_watch_uv_td": 0,
+        "live_show_uv_td": 0,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-08-27 14:39:43",
+        "duration_str": "",
+        "room_title": "太原清徐阳光花园小姐姐(宽带手机号卡)正在直播",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "",
+        "has_qrcode": true
+      }
+    },
+    {
+      "meta": {
+        "nickname": "慧子中国电信(王答营业厅)",
+        "unique_id": "21859454204",
+        "room_id": "",
+        "is_live": true,
+        "gmv": 0.0,
+        "acu": 0,
+        "pcu": 0,
+        "live_watch_uv_td": 0,
+        "live_show_uv_td": 0,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-08-27 14:30:17",
+        "duration_str": "",
+        "room_title": "天翼智屏，一天一块钱带回家",
         "room_type_tag": "职人",
         "city": "太原",
         "area": "",
@@ -298,49 +342,49 @@
     }
   ],
   "store_rating": {
-    "金牌": 26,
-    "银牌": 17,
-    "铜牌": 10,
+    "金牌": 27,
+    "银牌": 18,
+    "铜牌": 8,
     "无牌": 11,
     "total": 64
   },
   "product_ranking": [
     {
       "rank": 1,
-      "name": "【到店有礼】充值100元送抽纸",
-      "pay_gmv": 47700,
+      "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】",
+      "pay_gmv": 42300,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 2,
-      "name": "【到店有礼】充值100元送礼品",
-      "pay_gmv": 32500,
+      "name": "【到店充值】存300元话费送30G流量【山西电信】",
+      "pay_gmv": 28200,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 3,
-      "name": "【到店核销有礼】存50话费",
-      "pay_gmv": 19000,
+      "name": "【到店核销有礼】到店充值存50话费【太原电信】",
+      "pay_gmv": 7050,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 4,
-      "name": "【到店充值】存300话费",
-      "pay_gmv": 10200,
+      "name": "50元得200元代金券到店领纸品福利【山西电信】",
+      "pay_gmv": 2000.1,
       "pay_cert_cnt": 0,
-      "type": "团购",
+      "type": "代金券",
       "verify_gmv": 0
     },
     {
       "rank": 5,
-      "name": "宽带特惠",
-      "pay_gmv": 1210,
+      "name": "【盛夏狂欢】【宽带特惠】单宽带预约安装300M宽带新装福利价【太原电信】",
+      "pay_gmv": 1160,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -588,7 +632,7 @@
       "has_sales": 36,
       "week_sales": 58917.79,
       "week_verify": 20095.0,
-      "remain": 4211,
+      "remain": 4210,
       "limit": 10000
     },
     "craftman_live_top": [
@@ -1327,6 +1371,24 @@
           "live_cnt": 1,
           "show_uv": 0,
           "watch_uv": 15,
+          "gmv": 100,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "14:28",
+          "author_cnt": 1,
+          "live_cnt": 1,
+          "show_uv": 0,
+          "watch_uv": 15,
+          "gmv": 100,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "14:43",
+          "author_cnt": 3,
+          "live_cnt": 3,
+          "show_uv": 0,
+          "watch_uv": 20,
           "gmv": 100,
           "pay_cert_cnt": 0
         }
