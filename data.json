@@ -1,5 +1,5 @@
 {
-  "ts": "20260827133833",
+  "ts": "20260827134333",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 0,
@@ -12,7 +12,7 @@
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827133820",
+    "_ts": "20260827134320",
     "_stale": false
   },
   "summary": {
@@ -560,12 +560,12 @@
     ],
     "alerts": [],
     "craftman_summary": {
-      "total": 5788,
+      "total": 5789,
       "active": 36,
       "has_sales": 36,
       "week_sales": 58917.79,
       "week_verify": 20095.0,
-      "remain": 4212,
+      "remain": 4211,
       "limit": 10000
     },
     "craftman_live_top": [
@@ -1219,6 +1219,15 @@
         },
         {
           "time": "13:38",
+          "author_cnt": 0,
+          "live_cnt": 0,
+          "show_uv": 0,
+          "watch_uv": 0,
+          "gmv": 0,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "13:43",
           "author_cnt": 0,
           "live_cnt": 0,
           "show_uv": 0,
