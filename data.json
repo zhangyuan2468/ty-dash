@@ -1,18 +1,18 @@
 {
-  "ts": "20260828101258",
+  "ts": "20260828102732",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 1,
     "live_cnt": 1,
-    "live_show_uv": 429,
-    "live_watch_uv": 62,
-    "live_gmv": 0.0,
-    "live_pay_cert_cnt": 0,
+    "live_show_uv": 568,
+    "live_watch_uv": 78,
+    "live_gmv": 200.0,
+    "live_pay_cert_cnt": 2,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260828101258",
+    "_ts": "20260828102732",
     "_stale": false
   },
   "summary": {
@@ -42,15 +42,15 @@
     "week_live_gmv": 37888.1,
     "week_video_gmv": 13650.0,
     "week_live_cnt": 179,
-    "day_avg_pay_gmv": 184.34,
-    "day_avg_verify_gmv": 102.78,
+    "day_avg_pay_gmv": 155.11,
+    "day_avg_verify_gmv": 75.88,
     "week_pay_gmv_ratio": -16.44,
     "week_verify_gmv_ratio": -22.82,
     "week_refund_gmv_ratio": 45.52,
     "week_live_gmv_ratio": -2.35,
     "week_video_gmv_ratio": -31.57,
-    "week_live_verify_gmv": 17850.0,
-    "week_live_verify_gmv_ratio": -15.08,
+    "week_live_verify_gmv": 18300.0,
+    "week_live_verify_gmv_ratio": -14.57,
     "week_live_show_uv": 179338,
     "week_live_watch_uv": 19828,
     "poi_total": 64,
@@ -59,24 +59,24 @@
   "rooms": [
     {
       "meta": {
-        "nickname": "小吉(千峰路营业厅)",
-        "unique_id": "",
-        "room_id": "",
+        "nickname": "小吉中国电信营业厅(千峰路店)",
+        "unique_id": "77159569086",
+        "room_id": "9ac82d2f2443482b5d0fb4abb0f4be251fcb5c6e77facb0b3b7d9a6864c6e938",
         "is_live": true,
-        "gmv": 0,
-        "acu": 2,
-        "pcu": 62,
-        "live_watch_uv_td": 62,
-        "live_show_uv_td": 429,
+        "gmv": 200,
+        "acu": 1,
+        "pcu": 78,
+        "live_watch_uv_td": 78,
+        "live_show_uv_td": 568,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-28 09:21:00",
-        "duration_str": "约51分",
-        "room_title": "官方手机福利直播别错过！",
+        "live_start_str": "2026-08-28 09:21:32",
+        "duration_str": "00:34:19",
+        "room_title": "小吉中国电信营业厅(千峰路店)正在直播",
         "room_type_tag": "职人",
         "city": "太原",
         "area": "万柏林区",
-        "has_qrcode": true
+        "has_qrcode": false
       }
     }
   ],
@@ -281,10 +281,10 @@
     {
       "rank": 4,
       "name": "府东街东延营业厅",
-      "area": "迎泽区",
+      "area": "杏花岭区",
       "pay_gmv": 2700,
       "pay_cert_cnt": 0,
-      "ratio": 0,
+      "ratio": 38.78,
       "rating": "金牌"
     },
     {
@@ -293,7 +293,7 @@
       "area": "亲贤片区",
       "pay_gmv": 2650,
       "pay_cert_cnt": 0,
-      "ratio": 0,
+      "ratio": -19.7,
       "rating": "金牌"
     }
   ],
@@ -446,12 +446,12 @@
   },
   "qa": {
     "summary": {
-      "live_cnt": 1,
+      "live_cnt": 9,
       "alert_cnt": 0,
       "severe_cnt": 0,
       "warn_cnt": 0,
       "info_cnt": 0,
-      "pass_cnt": 1,
+      "pass_cnt": 9,
       "qa_round": 1
     },
     "rooms": [
@@ -464,7 +464,7 @@
         "gmv": 4250.0,
         "pay_cert_cnt": 42,
         "watch_uv": 1230,
-        "gpm": 0,
+        "gpm": 2965.81,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -478,7 +478,7 @@
         "gmv": 2950.0,
         "pay_cert_cnt": 25,
         "watch_uv": 775,
-        "gpm": 0,
+        "gpm": 3371.43,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -492,7 +492,7 @@
         "gmv": 2400.0,
         "pay_cert_cnt": 19,
         "watch_uv": 747,
-        "gpm": 0,
+        "gpm": 2846.98,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -506,7 +506,7 @@
         "gmv": 1559.0,
         "pay_cert_cnt": 13,
         "watch_uv": 244,
-        "gpm": 0,
+        "gpm": 5669.09,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -520,7 +520,7 @@
         "gmv": 1350.0,
         "pay_cert_cnt": 14,
         "watch_uv": 575,
-        "gpm": 0,
+        "gpm": 2073.73,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -534,7 +534,7 @@
         "gmv": 1300.0,
         "pay_cert_cnt": 15,
         "watch_uv": 565,
-        "gpm": 0,
+        "gpm": 2003.08,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -544,11 +544,11 @@
         "room_type_tag": "蓝V",
         "is_live": false,
         "live_start_str": "2026-08-27 16:54:47",
-        "duration_str": "约1小时3分",
+        "duration_str": "1小时3分13秒",
         "gmv": 1150.0,
         "pay_cert_cnt": 10,
         "watch_uv": 425,
-        "gpm": 0,
+        "gpm": 2489.18,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -558,11 +558,11 @@
         "room_type_tag": "蓝V",
         "is_live": false,
         "live_start_str": "2026-08-25 11:13:16",
-        "duration_str": "约41分",
+        "duration_str": "41分37秒",
         "gmv": 1000.0,
         "pay_cert_cnt": 11,
         "watch_uv": 288,
-        "gpm": 0,
+        "gpm": 3194.44,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -572,11 +572,11 @@
         "room_type_tag": "蓝V",
         "is_live": false,
         "live_start_str": "2026-08-27 10:42:58",
-        "duration_str": "约54分",
+        "duration_str": "54分28秒",
         "gmv": 800.0,
         "pay_cert_cnt": 6,
         "watch_uv": 469,
-        "gpm": 0,
+        "gpm": 1530.81,
         "alerts": [],
         "qa_pass": true,
         "qa_round": 1
@@ -584,7 +584,7 @@
     ],
     "alerts": [],
     "craftman_summary": {
-      "total": 5807,
+      "total": 5789,
       "active": 36,
       "has_sales": 36,
       "week_sales": 41968.99,
@@ -594,25 +594,19 @@
     },
     "craftman_live_top": [
       {
-        "name": "茜茜",
-        "store": "中国电信(杏花岭区旱西关营业厅)",
-        "live_cnt": 2,
-        "sales": 1400.0,
-        "fans": 7
+        "nickname": "茜茜(杏花岭区旱西关营业厅)",
+        "douyin_id": "28218762071",
+        "sales": 1400.0
       },
       {
-        "name": "梅梅",
-        "store": "中国电信(朝阳街营业厅)",
-        "live_cnt": 6,
-        "sales": 300.0,
-        "fans": 10
+        "nickname": "梅梅(朝阳街营业厅)",
+        "douyin_id": "71951548365",
+        "sales": 300.0
       },
       {
-        "name": "店长小姐姐",
-        "store": "中国电信(新建南路营业厅)",
-        "live_cnt": 4,
-        "sales": 200.0,
-        "fans": 2
+        "nickname": "店长小姐姐(新建南路营业厅)",
+        "douyin_id": "41920541559",
+        "sales": 200.0
       }
     ]
   },
@@ -1374,6 +1368,15 @@
           "watch_uv": 62,
           "gmv": 0,
           "pay_cert_cnt": 0
+        },
+        {
+          "time": "10:27",
+          "author_cnt": 1,
+          "live_cnt": 1,
+          "show_uv": 568,
+          "watch_uv": 78,
+          "gmv": 200,
+          "pay_cert_cnt": 2
         }
       ]
     }
