@@ -1,129 +1,62 @@
 {
-  "ts": "20260827144643",
+  "ts": "20260828091501",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 3,
-    "live_cnt": 3,
+    "live_author_cnt": 0,
+    "live_cnt": 0,
     "live_show_uv": 0,
-    "live_watch_uv": 20,
-    "live_gmv": 100.0,
+    "live_watch_uv": 0,
+    "live_gmv": 0.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260827144643",
-    "_stale": false
+    "_ts": "20260828091501",
+    "_stale": true
   },
   "summary": {
-    "month_pay_gmv": 309992.4,
+    "month_pay_gmv": 317252.4,
     "month_pay_cert_cnt": 0,
-    "month_verify_gmv": 172640.1,
+    "month_verify_gmv": 176890.1,
     "month_verify_cert_cnt": 0,
-    "month_refund_gmv": 198025.2,
+    "month_refund_gmv": 201755.2,
     "month_refund_cert_cnt": 0,
-    "month_pay_user_cnt": 2914,
+    "month_pay_user_cnt": 2967,
     "month_verify_user_cnt": 0,
-    "active_poi_ratio": 76.56,
-    "month_visit_uv": 34307,
-    "month_visit_cvr": 8.49,
-    "month_live_gmv": 120396.4,
-    "month_video_gmv": 92457.0,
+    "active_poi_ratio": 57.81,
+    "month_visit_uv": 35106,
+    "month_visit_cvr": 8.45,
+    "month_live_gmv": 123496.4,
+    "month_video_gmv": 93457.0,
     "month_live_cnt": 621,
-    "month_pay_gmv_ratio": 3.12,
-    "month_verify_gmv_ratio": 50.34,
-    "month_refund_gmv_ratio": 145.01,
-    "week_pay_gmv": 82763.1,
-    "week_verify_gmv": 37195.0,
-    "week_refund_gmv": 76747.1,
-    "week_visit_uv": 7185,
-    "week_pay_user_cnt": 666,
-    "week_visit_cvr": 9.27,
-    "week_live_gmv": 39958.1,
-    "week_video_gmv": 19170.0,
+    "month_pay_gmv_ratio": 3.79,
+    "month_verify_gmv_ratio": 54.04,
+    "month_refund_gmv_ratio": 140.29,
+    "week_pay_gmv": 69493.1,
+    "week_verify_gmv": 33995.0,
+    "week_refund_gmv": 74907.1,
+    "week_visit_uv": 5888,
+    "week_pay_user_cnt": 580,
+    "week_visit_cvr": 9.85,
+    "week_live_gmv": 37888.1,
+    "week_video_gmv": 13650.0,
     "week_live_cnt": 168,
-    "day_avg_pay_gmv": 184.73,
-    "day_avg_verify_gmv": 83.02,
-    "week_pay_gmv_ratio": -7.17,
-    "week_verify_gmv_ratio": -17.79,
-    "week_refund_gmv_ratio": 45.89,
-    "week_live_gmv_ratio": 10.75,
-    "week_video_gmv_ratio": -36.69,
+    "day_avg_pay_gmv": 184.34,
+    "day_avg_verify_gmv": 102.78,
+    "week_pay_gmv_ratio": -16.44,
+    "week_verify_gmv_ratio": -22.82,
+    "week_refund_gmv_ratio": 45.52,
+    "week_live_gmv_ratio": -2.35,
+    "week_video_gmv_ratio": -31.57,
     "week_live_verify_gmv": 17850.0,
     "week_live_verify_gmv_ratio": -15.08,
-    "week_live_show_uv": 192289,
-    "week_live_watch_uv": 19842,
+    "week_live_show_uv": 179338,
+    "week_live_watch_uv": 19828,
     "poi_total": 64,
-    "poi_active": 49
+    "poi_active": 37
   },
-  "rooms": [
-    {
-      "meta": {
-        "nickname": "茜茜中国电信(杏花岭区旱西关营业厅)",
-        "unique_id": "28218762071",
-        "room_id": "",
-        "is_live": true,
-        "gmv": 100.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 20,
-        "live_show_uv_td": 0,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-27 14:07:31",
-        "duration_str": "",
-        "room_title": "茜茜中国电信(杏花岭区旱西关营业厅)正在直播",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "",
-        "has_qrcode": true
-      }
-    },
-    {
-      "meta": {
-        "nickname": "太原清徐阳光花园小姐姐(宽带手机号卡)",
-        "unique_id": "52578069100",
-        "room_id": "",
-        "is_live": true,
-        "gmv": 0.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 0,
-        "live_show_uv_td": 0,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-27 14:39:43",
-        "duration_str": "",
-        "room_title": "太原清徐阳光花园小姐姐(宽带手机号卡)正在直播",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "",
-        "has_qrcode": true
-      }
-    },
-    {
-      "meta": {
-        "nickname": "慧子中国电信(王答营业厅)",
-        "unique_id": "21859454204",
-        "room_id": "",
-        "is_live": true,
-        "gmv": 0.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 0,
-        "live_show_uv_td": 0,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-27 14:30:17",
-        "duration_str": "",
-        "room_title": "天翼智屏，一天一块钱带回家",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "",
-        "has_qrcode": true
-      }
-    }
-  ],
+  "rooms": [],
   "areas": {
     "小店区": {
       "pay_gmv": 12480,
@@ -352,7 +285,7 @@
     {
       "rank": 1,
       "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】",
-      "pay_gmv": 42300,
+      "pay_gmv": 34500.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -360,7 +293,7 @@
     {
       "rank": 2,
       "name": "【到店充值】存300元话费送30G流量【山西电信】",
-      "pay_gmv": 28200,
+      "pay_gmv": 22800.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -368,7 +301,7 @@
     {
       "rank": 3,
       "name": "【到店核销有礼】到店充值存50话费【太原电信】",
-      "pay_gmv": 7050,
+      "pay_gmv": 7100.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -376,7 +309,7 @@
     {
       "rank": 4,
       "name": "50元得200元代金券到店领纸品福利【山西电信】",
-      "pay_gmv": 2000.1,
+      "pay_gmv": 1950.1,
       "pay_cert_cnt": 0,
       "type": "代金券",
       "verify_gmv": 0
@@ -384,7 +317,7 @@
     {
       "rank": 5,
       "name": "【盛夏狂欢】【宽带特惠】单宽带预约安装300M宽带新装福利价【太原电信】",
-      "pay_gmv": 1160,
+      "pay_gmv": 1160.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -395,7 +328,7 @@
       "rank": 1,
       "name": "太原电信线上营业厅",
       "unique_id": "tydx10000",
-      "pay_gmv": 4250,
+      "pay_gmv": 4250.0,
       "pay_cert_cnt": 42,
       "duration": "2小时57分26秒",
       "type": "蓝V"
@@ -404,7 +337,7 @@
       "rank": 2,
       "name": "太原电信线上营业厅",
       "unique_id": "tydx10000",
-      "pay_gmv": 2950,
+      "pay_gmv": 2950.0,
       "pay_cert_cnt": 25,
       "duration": "1小时43分0秒",
       "type": "蓝V"
@@ -413,7 +346,7 @@
       "rank": 3,
       "name": "太原电信线上营业厅",
       "unique_id": "tydx10000",
-      "pay_gmv": 2400,
+      "pay_gmv": 2400.0,
       "pay_cert_cnt": 19,
       "duration": "1小时33分32秒",
       "type": "蓝V"
@@ -422,70 +355,71 @@
       "rank": 4,
       "name": "太原电信线上营业厅",
       "unique_id": "tydx10000",
-      "pay_gmv": 1700,
-      "pay_cert_cnt": 21,
-      "duration": "2小时18分51秒",
+      "pay_gmv": 1559.0,
+      "pay_cert_cnt": 13,
+      "duration": "40分43秒",
       "type": "蓝V"
     },
     {
       "rank": 5,
       "name": "太原电信线上营业厅",
       "unique_id": "tydx10000",
-      "pay_gmv": 1559,
-      "pay_cert_cnt": 13,
-      "duration": "40分43秒",
+      "pay_gmv": 1350.0,
+      "pay_cert_cnt": 14,
+      "duration": "1小时24分29秒",
       "type": "蓝V"
     }
   ],
   "source_distribution": [
     {
       "name": "推荐分享场景",
-      "value": 50148.1,
-      "ratio": 60.59
+      "value": 39908.1,
+      "ratio": 57.43
     },
     {
       "name": "抖音搜索场景",
-      "value": 19650.0,
-      "ratio": 23.74
+      "value": 19040.0,
+      "ratio": 27.4
     },
     {
       "name": "团购商城场景",
-      "value": 11870.0,
-      "ratio": 14.34
+      "value": 9250.0,
+      "ratio": 13.31
     },
     {
       "name": "线下场景",
-      "value": 1095.0,
-      "ratio": 1.32
+      "value": 1295.0,
+      "ratio": 1.86
     }
   ],
   "product_type": [
     {
       "name": "团购",
-      "value": 80363.0,
-      "ratio": 97.1
+      "value": 67043.0,
+      "ratio": 96.47
     },
     {
       "name": "代金券",
-      "value": 2400.1,
-      "ratio": 2.9
+      "value": 2450.1,
+      "ratio": 3.53
     }
   ],
   "channel_distribution": {
-    "live_gmv": 39958.1,
-    "live_ratio": 48.28,
-    "live_ratio_change": 10.75,
-    "video_gmv": 19170.0,
-    "video_ratio": 23.16,
-    "video_ratio_change": -36.69,
-    "other_gmv": 8950.0,
-    "other_ratio": 10.82,
-    "huoke_gmv": 6850.0,
-    "huoke_ratio": 8.28,
-    "huoke_ratio_change": 4.58,
-    "search_card_gmv": 7890.0,
-    "search_card_ratio": 9.53,
-    "search_card_ratio_change": 31.06
+    "live_gmv": 37888.1,
+    "live_ratio": 54.52,
+    "live_ratio_change": -2.35,
+    "video_gmv": 13650.0,
+    "video_ratio": 19.64,
+    "video_ratio_change": -31.57,
+    "other_gmv": 7745.0,
+    "other_ratio": 11.14,
+    "other_ratio_change": -20.77,
+    "huoke_gmv": 4300.0,
+    "huoke_ratio": 6.19,
+    "huoke_ratio_change": -48.19,
+    "search_card_gmv": 5910.0,
+    "search_card_ratio": 8.5,
+    "search_card_ratio_change": -6.78
   },
   "qa": {
     "summary": {
@@ -632,7 +566,7 @@
       "has_sales": 36,
       "week_sales": 58917.79,
       "week_verify": 20095.0,
-      "remain": 4210,
+      "remain": 4193,
       "limit": 10000
     },
     "craftman_live_top": [
@@ -1390,6 +1324,17 @@
           "show_uv": 0,
           "watch_uv": 20,
           "gmv": 100,
+          "pay_cert_cnt": 0
+        }
+      ],
+      "2026-08-28": [
+        {
+          "time": "09:15",
+          "author_cnt": 0,
+          "live_cnt": 0,
+          "show_uv": 0,
+          "watch_uv": 0,
+          "gmv": 0,
           "pay_cert_cnt": 0
         }
       ]
