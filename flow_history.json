@@ -108,6 +108,206 @@
         "watch_uv": 0,
         "gmv": 0,
         "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:08",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:13",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:18",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:23",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:28",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:33",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:38",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:43",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:48",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:53",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "13:58",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:03",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:08",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:13",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:18",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 0,
+        "watch_uv": 4,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:23",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 0,
+        "watch_uv": 15,
+        "gmv": 100,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:28",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 0,
+        "watch_uv": 15,
+        "gmv": 100,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "14:43",
+        "author_cnt": 3,
+        "live_cnt": 3,
+        "show_uv": 0,
+        "watch_uv": 20,
+        "gmv": 100,
+        "pay_cert_cnt": 0
+      }
+    ],
+    "2026-08-28": [
+      {
+        "time": "09:15",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "10:12",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 429,
+        "watch_uv": 62,
+        "gmv": 0,
+        "pay_cert_cnt": 0
+      },
+      {
+        "time": "10:27",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 568,
+        "watch_uv": 78,
+        "gmv": 200,
+        "pay_cert_cnt": 2
+      },
+      {
+        "time": "11:50",
+        "author_cnt": 2,
+        "live_cnt": 2,
+        "show_uv": 1544,
+        "watch_uv": 145,
+        "gmv": 500,
+        "pay_cert_cnt": 5
       }
     ]
   }
