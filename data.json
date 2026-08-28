@@ -1,19 +1,19 @@
 {
-  "ts": "20260828115613",
+  "ts": "20260828121847",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 2,
-    "live_cnt": 2,
-    "live_show_uv": 1634,
-    "live_watch_uv": 155,
-    "live_gmv": 500.0,
-    "live_pay_cert_cnt": 5,
+    "live_author_cnt": 0,
+    "live_cnt": 0,
+    "live_show_uv": 0,
+    "live_watch_uv": 0,
+    "live_gmv": 0,
+    "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260828115613",
-    "_stale": false
+    "_ts": "20260828121847",
+    "_stale": true
   },
   "summary": {
     "month_pay_gmv": 317252.4,
@@ -56,52 +56,7 @@
     "poi_total": 64,
     "poi_active": 37
   },
-  "rooms": [
-    {
-      "meta": {
-        "nickname": "营业员小姐姐电信",
-        "unique_id": "54126952968",
-        "room_id": "05ed4e98d9414de10c6c0d4eba90dc9e33774aec06d4009ac4c9f365861ae1f2",
-        "is_live": true,
-        "gmv": 40000,
-        "acu": 1,
-        "pcu": 1,
-        "live_watch_uv_td": 144,
-        "live_show_uv_td": 1298,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-28 10:34:35",
-        "duration_str": "01:20:19",
-        "room_title": "欢迎大家走进直播间～",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "学府街店",
-        "has_qrcode": true
-      }
-    },
-    {
-      "meta": {
-        "nickname": "小尹中国电信(娄烦移民区营业厅)",
-        "unique_id": "26997756277",
-        "room_id": "a36e9bf810277939ba9583d288ded59197c1c0caeaddf45e6d4bd928fd00e339",
-        "is_live": true,
-        "gmv": 10000,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 11,
-        "live_show_uv_td": 336,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-28 10:31:42",
-        "duration_str": "01:22:41",
-        "room_title": "小尹中国电信 100元送啥",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "娄烦移民区店",
-        "has_qrcode": true
-      }
-    }
-  ],
+  "rooms": [],
   "areas": {
     "小店区": {
       "pay_gmv": 12480,
@@ -468,122 +423,16 @@
   },
   "qa": {
     "summary": {
-      "live_cnt": 2,
-      "alert_cnt": 4,
-      "severe_cnt": 2,
-      "warn_cnt": 2,
+      "live_cnt": 0,
+      "alert_cnt": 0,
+      "severe_cnt": 0,
+      "warn_cnt": 0,
       "info_cnt": 0,
       "pass_cnt": 0,
       "qa_round": 1
     },
-    "rooms": [
-      {
-        "nickname": "营业员小姐姐电信",
-        "unique_id": "54126952968",
-        "room_id": "05ed4e98d9414de10c6c0d4eba90dc9e33774aec06d4009ac4c9f365861ae1f2",
-        "is_live": true,
-        "room_title": "欢迎大家走进直播间～",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "学府街店",
-        "live_start_str": "2026-08-28 10:34:35",
-        "duration_str": "01:20:19",
-        "acu": 1,
-        "pcu": 1,
-        "watch_uv": 144,
-        "show_uv": 1298,
-        "gmv": 400.0,
-        "pay_cert_cnt": 4,
-        "like_cnt": 0,
-        "comment_cnt": 0,
-        "interact_rate": 0.0,
-        "has_qrcode": true,
-        "alerts": [
-          {
-            "level": "severe",
-            "type": "挂播预警",
-            "desc": "在线仅1人，疑似挂播/空播",
-            "detail": "在线人数≤5，建议检查直播画面是否正常"
-          },
-          {
-            "level": "warn",
-            "type": "低互动预警",
-            "desc": "互动率0.0%",
-            "detail": "互动率<5%，建议增加互动话术"
-          }
-        ],
-        "qa_pass": false,
-        "qa_round": 1
-      },
-      {
-        "nickname": "小尹中国电信(娄烦移民区营业厅)",
-        "unique_id": "26997756277",
-        "room_id": "a36e9bf810277939ba9583d288ded59197c1c0caeaddf45e6d4bd928fd00e339",
-        "is_live": true,
-        "room_title": "小尹中国电信 100元送啥",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "娄烦移民区店",
-        "live_start_str": "2026-08-28 10:31:42",
-        "duration_str": "01:22:41",
-        "acu": 0,
-        "pcu": 0,
-        "watch_uv": 11,
-        "show_uv": 336,
-        "gmv": 100.0,
-        "pay_cert_cnt": 1,
-        "like_cnt": 0,
-        "comment_cnt": 0,
-        "interact_rate": 0.0,
-        "has_qrcode": true,
-        "alerts": [
-          {
-            "level": "severe",
-            "type": "挂播预警",
-            "desc": "在线仅0人，疑似挂播/空播",
-            "detail": "在线人数≤5，建议检查直播画面是否正常"
-          },
-          {
-            "level": "warn",
-            "type": "低互动预警",
-            "desc": "互动率0.0%",
-            "detail": "互动率<5%，建议增加互动话术"
-          }
-        ],
-        "qa_pass": false,
-        "qa_round": 1
-      }
-    ],
-    "alerts": [
-      {
-        "level": "severe",
-        "room": "营业员小姐姐电信",
-        "type": "挂播预警",
-        "desc": "在线仅1人，疑似挂播/空播",
-        "detail": "在线人数≤5，建议检查直播画面是否正常"
-      },
-      {
-        "level": "warn",
-        "room": "营业员小姐姐电信",
-        "type": "低互动预警",
-        "desc": "互动率0.0%",
-        "detail": "互动率<5%，建议增加互动话术"
-      },
-      {
-        "level": "severe",
-        "room": "小尹中国电信(娄烦移民区营业厅)",
-        "type": "挂播预警",
-        "desc": "在线仅0人，疑似挂播/空播",
-        "detail": "在线人数≤5，建议检查直播画面是否正常"
-      },
-      {
-        "level": "warn",
-        "room": "小尹中国电信(娄烦移民区营业厅)",
-        "type": "低互动预警",
-        "desc": "互动率0.0%",
-        "detail": "互动率<5%，建议增加互动话术"
-      }
-    ],
+    "rooms": [],
+    "alerts": [],
     "craftman_summary": {
       "total": 5789,
       "active": 36,
@@ -1405,6 +1254,15 @@
           "watch_uv": 155,
           "gmv": 500,
           "pay_cert_cnt": 5
+        },
+        {
+          "time": "12:18",
+          "author_cnt": 0,
+          "live_cnt": 0,
+          "show_uv": 0,
+          "watch_uv": 0,
+          "gmv": 0,
+          "pay_cert_cnt": 0
         }
       ]
     }

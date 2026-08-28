@@ -317,6 +317,15 @@
         "watch_uv": 152,
         "gmv": 500,
         "pay_cert_cnt": 5
+      },
+      {
+        "time": "12:18",
+        "author_cnt": 0,
+        "live_cnt": 0,
+        "show_uv": 0,
+        "watch_uv": 0,
+        "gmv": 0,
+        "pay_cert_cnt": 0
       }
     ]
   }
