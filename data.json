@@ -628,19 +628,25 @@
     },
     "craftman_live_top": [
       {
-        "nickname": "茜茜(杏花岭区旱西关营业厅)",
-        "douyin_id": "28218762071",
-        "sales": 1400.0
+        "name": "茜茜",
+        "store": "中国电信(杏花岭区旱西关营业厅)",
+        "live_cnt": 2,
+        "sales": 1400.0,
+        "fans": 7
       },
       {
-        "nickname": "梅梅(朝阳街营业厅)",
-        "douyin_id": "71951548365",
-        "sales": 300.0
+        "name": "梅梅",
+        "store": "中国电信(朝阳街营业厅)",
+        "live_cnt": 6,
+        "sales": 300.0,
+        "fans": 10
       },
       {
-        "nickname": "店长小姐姐(新建南路营业厅)",
-        "douyin_id": "41920541559",
-        "sales": 200.0
+        "name": "店长小姐姐",
+        "store": "中国电信(新建南路营业厅)",
+        "live_cnt": 4,
+        "sales": 200.0,
+        "fans": 2
       }
     ]
   },
