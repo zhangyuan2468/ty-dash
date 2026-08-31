@@ -1,5 +1,5 @@
 {
-  "ts": "20260831102537",
+  "ts": "20260831102700",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 1,
@@ -25,20 +25,20 @@
     "month_pay_user_cnt": 3515,
     "month_verify_user_cnt": 0,
     "active_poi_ratio": 82.81,
-    "month_visit_uv": 40246,
-    "month_visit_cvr": 8.72,
+    "month_visit_uv": 0,
+    "month_visit_cvr": 0,
     "month_live_gmv": 146196.4,
     "month_video_gmv": 106007.0,
-    "month_live_cnt": 728,
+    "month_live_cnt": 0,
     "month_pay_gmv_ratio": 15.46,
     "month_verify_gmv_ratio": 72.84,
     "month_refund_gmv_ratio": 152.61,
     "week_pay_gmv": 93521.1,
     "week_verify_gmv": 37613.0,
     "week_refund_gmv": 74879.1,
-    "week_visit_uv": 8373,
+    "week_visit_uv": 0,
     "week_pay_user_cnt": 915,
-    "week_visit_cvr": 10.95,
+    "week_visit_cvr": 0,
     "week_live_gmv": 49518.1,
     "week_video_gmv": 20350.0,
     "week_live_cnt": 174,
@@ -49,10 +49,10 @@
     "week_refund_gmv_ratio": 38.96,
     "week_live_gmv_ratio": 55.97,
     "week_video_gmv_ratio": 12.44,
-    "week_live_verify_gmv": 18300.0,
-    "week_live_verify_gmv_ratio": -14.57,
-    "week_live_show_uv": 192289,
-    "week_live_watch_uv": 19842,
+    "week_live_verify_gmv": 24450.0,
+    "week_live_verify_gmv_ratio": 32.02,
+    "week_live_show_uv": 196977,
+    "week_live_watch_uv": 22476,
     "poi_total": 64,
     "poi_active": 53
   },
@@ -253,7 +253,7 @@
   "store_ranking": [
     {
       "rank": 1,
-      "name": "兴华街营业厅",
+      "name": "中国电信(兴华街营业厅)",
       "area": "尖草坪区",
       "pay_gmv": 4250,
       "pay_cert_cnt": 0,
@@ -262,7 +262,7 @@
     },
     {
       "rank": 2,
-      "name": "长风东街营业厅",
+      "name": "中国电信(长风东街营业厅)",
       "area": "迎泽区",
       "pay_gmv": 4200,
       "pay_cert_cnt": 0,
@@ -271,7 +271,7 @@
     },
     {
       "rank": 3,
-      "name": "义井街营业厅",
+      "name": "中国电信(义井街营业厅)",
       "area": "晋源区",
       "pay_gmv": 3650,
       "pay_cert_cnt": 0,
@@ -280,7 +280,7 @@
     },
     {
       "rank": 4,
-      "name": "人民路网格人民南路营业厅",
+      "name": "中国电信(人民路网格人民南路营业厅)",
       "area": "小店区",
       "pay_gmv": 3000,
       "pay_cert_cnt": 0,
@@ -289,7 +289,7 @@
     },
     {
       "rank": 5,
-      "name": "亲贤街营业厅",
+      "name": "中国电信(亲贤街营业厅)",
       "area": "小店区",
       "pay_gmv": 2950,
       "pay_cert_cnt": 0,
@@ -308,7 +308,7 @@
     {
       "rank": 1,
       "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】",
-      "pay_gmv": 40900.0,
+      "pay_gmv": 36100.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -316,7 +316,7 @@
     {
       "rank": 2,
       "name": "【到店充值】存300元话费送30G流量【山西电信】",
-      "pay_gmv": 23100.0,
+      "pay_gmv": 5100.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -324,25 +324,25 @@
     {
       "rank": 3,
       "name": "【到店核销有礼】到店充值存50话费【太原电信】",
-      "pay_gmv": 21550.0,
+      "pay_gmv": 4250.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 4,
-      "name": "【核销有礼】充值100元送抽纸【山西电信】",
-      "pay_gmv": 3600.0,
+      "name": "【到店充值有礼】到店充值100元话费送抽纸二选一【山西电信】",
+      "pay_gmv": 1700.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 5,
-      "name": "50元得200元代金券到店领纸品福利【山西电信】",
-      "pay_gmv": 1700.1,
+      "name": "【盛夏狂欢】【宽带特惠】单宽带预约安装300M宽带新装福利价【太原电信】",
+      "pay_gmv": 580.0,
       "pay_cert_cnt": 0,
-      "type": "代金券",
+      "type": "团购",
       "verify_gmv": 0
     }
   ],
@@ -376,8 +376,8 @@
     },
     {
       "rank": 4,
-      "name": "用千兆宽带领手机",
-      "unique_id": "",
+      "name": "太原义井街网点（宽带、手机）",
+      "unique_id": "1736527899",
       "pay_gmv": 2300.0,
       "pay_cert_cnt": 24,
       "duration": "2小时19分7秒",
