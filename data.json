@@ -1,18 +1,18 @@
 {
-  "ts": "20260831102700",
+  "ts": "20260831104735",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 1,
     "live_cnt": 1,
     "live_show_uv": 0,
-    "live_watch_uv": 495,
-    "live_gmv": 1950.0,
+    "live_watch_uv": 680,
+    "live_gmv": 3800.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260831102537",
+    "_ts": "20260831104722",
     "_stale": false
   },
   "summary": {
@@ -63,10 +63,10 @@
         "unique_id": "tydx10000",
         "room_id": "",
         "is_live": true,
-        "gmv": 1950.0,
+        "gmv": 3800.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 495,
+        "live_watch_uv_td": 680,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
@@ -584,39 +584,24 @@
     ],
     "alerts": [],
     "craftman_summary": {
-      "total": 5819,
+      "total": 5822,
       "active": 38,
       "has_sales": 38,
       "week_sales": 51616.99,
       "week_verify": 18463.0,
-      "remain": 4181,
+      "remain": 4178,
       "limit": 10000
     },
     "craftman_live_top": [
       {
-        "nickname": "小吉(千峰路店)",
-        "douyin_id": "",
-        "sales": 2613.0
-      },
-      {
-        "nickname": "宵宵(黎氏阁)",
-        "douyin_id": "",
-        "sales": 1800.0
-      },
-      {
-        "nickname": "小路(西山)",
-        "douyin_id": "",
-        "sales": 1250.0
-      },
-      {
-        "nickname": "茜茜(旱西关)",
-        "douyin_id": "",
+        "nickname": "茜茜(杏花岭区旱西关营业厅)",
+        "douyin_id": "28218762071",
         "sales": 1200.0
       },
       {
-        "nickname": "小姐姐(融创)",
-        "douyin_id": "",
-        "sales": 1150.0
+        "nickname": "梅梅(朝阳街营业厅)",
+        "douyin_id": "71951548365",
+        "sales": 500.0
       }
     ]
   },
@@ -1436,12 +1421,12 @@
           "pay_cert_cnt": 0
         },
         {
-          "time": "10:25",
+          "time": "10:47",
           "author_cnt": 1,
           "live_cnt": 1,
           "show_uv": 0,
-          "watch_uv": 495,
-          "gmv": 1950.0,
+          "watch_uv": 680,
+          "gmv": 3800,
           "pay_cert_cnt": 0
         }
       ]
