@@ -1,5 +1,5 @@
 {
-  "ts": "20260831101630",
+  "ts": "20260831102537",
   "city": "太原",
   "flow_realtime": {
     "live_author_cnt": 1,
@@ -12,49 +12,49 @@
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260831101616",
+    "_ts": "20260831102537",
     "_stale": false
   },
   "summary": {
-    "month_pay_gmv": 317252.4,
+    "month_pay_gmv": 364708.4,
     "month_pay_cert_cnt": 0,
-    "month_verify_gmv": 176890.1,
+    "month_verify_gmv": 198486.1,
     "month_verify_cert_cnt": 0,
-    "month_refund_gmv": 201755.2,
+    "month_refund_gmv": 223075.2,
     "month_refund_cert_cnt": 0,
-    "month_pay_user_cnt": 2967,
+    "month_pay_user_cnt": 3515,
     "month_verify_user_cnt": 0,
-    "active_poi_ratio": 57.81,
-    "month_visit_uv": 35106,
-    "month_visit_cvr": 8.45,
-    "month_live_gmv": 123496.4,
-    "month_video_gmv": 93457.0,
-    "month_live_cnt": 654,
-    "month_pay_gmv_ratio": 3.79,
-    "month_verify_gmv_ratio": 54.04,
-    "month_refund_gmv_ratio": 140.29,
-    "week_pay_gmv": 69493.1,
-    "week_verify_gmv": 33995.0,
-    "week_refund_gmv": 74907.1,
-    "week_visit_uv": 5888,
-    "week_pay_user_cnt": 580,
-    "week_visit_cvr": 9.85,
-    "week_live_gmv": 37888.1,
-    "week_video_gmv": 13650.0,
-    "week_live_cnt": 179,
-    "day_avg_pay_gmv": 155.11,
-    "day_avg_verify_gmv": 75.88,
-    "week_pay_gmv_ratio": -16.44,
-    "week_verify_gmv_ratio": -22.82,
-    "week_refund_gmv_ratio": 45.52,
-    "week_live_gmv_ratio": -2.35,
-    "week_video_gmv_ratio": -31.57,
+    "active_poi_ratio": 82.81,
+    "month_visit_uv": 40246,
+    "month_visit_cvr": 8.72,
+    "month_live_gmv": 146196.4,
+    "month_video_gmv": 106007.0,
+    "month_live_cnt": 728,
+    "month_pay_gmv_ratio": 15.46,
+    "month_verify_gmv_ratio": 72.84,
+    "month_refund_gmv_ratio": 152.61,
+    "week_pay_gmv": 93521.1,
+    "week_verify_gmv": 37613.0,
+    "week_refund_gmv": 74879.1,
+    "week_visit_uv": 8373,
+    "week_pay_user_cnt": 915,
+    "week_visit_cvr": 10.95,
+    "week_live_gmv": 49518.1,
+    "week_video_gmv": 20350.0,
+    "week_live_cnt": 174,
+    "day_avg_pay_gmv": 208.75,
+    "day_avg_verify_gmv": 83.95,
+    "week_pay_gmv_ratio": 24.95,
+    "week_verify_gmv_ratio": -4.41,
+    "week_refund_gmv_ratio": 38.96,
+    "week_live_gmv_ratio": 55.97,
+    "week_video_gmv_ratio": 12.44,
     "week_live_verify_gmv": 18300.0,
     "week_live_verify_gmv_ratio": -14.57,
-    "week_live_show_uv": 179338,
-    "week_live_watch_uv": 19828,
+    "week_live_show_uv": 192289,
+    "week_live_watch_uv": 19842,
     "poi_total": 64,
-    "poi_active": 37
+    "poi_active": 53
   },
   "rooms": [
     {
@@ -253,54 +253,54 @@
   "store_ranking": [
     {
       "rank": 1,
-      "name": "长风东街营业厅",
-      "area": "迎泽片区",
-      "pay_gmv": 3700,
+      "name": "兴华街营业厅",
+      "area": "尖草坪区",
+      "pay_gmv": 4250,
       "pay_cert_cnt": 0,
-      "ratio": 43.97,
+      "ratio": 0,
       "rating": "金牌"
     },
     {
       "rank": 2,
-      "name": "兴华街营业厅",
-      "area": "尖草坪片区",
-      "pay_gmv": 2850,
+      "name": "长风东街营业厅",
+      "area": "迎泽区",
+      "pay_gmv": 4200,
       "pay_cert_cnt": 0,
-      "ratio": 7.55,
+      "ratio": 0,
       "rating": "金牌"
     },
     {
       "rank": 3,
       "name": "义井街营业厅",
-      "area": "晋源片区",
-      "pay_gmv": 2750,
+      "area": "晋源区",
+      "pay_gmv": 3650,
       "pay_cert_cnt": 0,
-      "ratio": -17.91,
+      "ratio": 0,
       "rating": "金牌"
     },
     {
       "rank": 4,
-      "name": "府东街东延营业厅",
-      "area": "杏花岭片区",
-      "pay_gmv": 2700,
+      "name": "人民路网格人民南路营业厅",
+      "area": "小店区",
+      "pay_gmv": 3000,
       "pay_cert_cnt": 0,
-      "ratio": 38.78,
+      "ratio": 0,
       "rating": "金牌"
     },
     {
       "rank": 5,
       "name": "亲贤街营业厅",
-      "area": "小店片区",
-      "pay_gmv": 2650,
+      "area": "小店区",
+      "pay_gmv": 2950,
       "pay_cert_cnt": 0,
-      "ratio": -19.7,
+      "ratio": 0,
       "rating": "金牌"
     }
   ],
   "store_rating": {
-    "金牌": 27,
-    "银牌": 18,
-    "铜牌": 8,
+    "金牌": 26,
+    "银牌": 17,
+    "铜牌": 10,
     "无牌": 11,
     "total": 64
   },
@@ -308,7 +308,7 @@
     {
       "rank": 1,
       "name": "【到店有礼】到店充值100元话费送礼品二选一【山西电信】",
-      "pay_gmv": 34500.0,
+      "pay_gmv": 40900.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -316,7 +316,7 @@
     {
       "rank": 2,
       "name": "【到店充值】存300元话费送30G流量【山西电信】",
-      "pay_gmv": 22800.0,
+      "pay_gmv": 23100.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
@@ -324,25 +324,25 @@
     {
       "rank": 3,
       "name": "【到店核销有礼】到店充值存50话费【太原电信】",
-      "pay_gmv": 7100.0,
+      "pay_gmv": 21550.0,
       "pay_cert_cnt": 0,
       "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 4,
-      "name": "50元得200元代金券到店领纸品福利【山西电信】",
-      "pay_gmv": 1950.1,
+      "name": "【核销有礼】充值100元送抽纸【山西电信】",
+      "pay_gmv": 3600.0,
       "pay_cert_cnt": 0,
-      "type": "代金券",
+      "type": "团购",
       "verify_gmv": 0
     },
     {
       "rank": 5,
-      "name": "【盛夏狂欢】【宽带特惠】单宽带预约安装300M宽带新装福利价【太原电信】",
-      "pay_gmv": 1160.0,
+      "name": "50元得200元代金券到店领纸品福利【山西电信】",
+      "pay_gmv": 1700.1,
       "pay_cert_cnt": 0,
-      "type": "团购",
+      "type": "代金券",
       "verify_gmv": 0
     }
   ],
@@ -376,73 +376,73 @@
     },
     {
       "rank": 4,
-      "name": "太原电信线上营业厅",
-      "unique_id": "tydx10000",
-      "pay_gmv": 1559.0,
-      "pay_cert_cnt": 13,
-      "duration": "40分43秒",
-      "type": "蓝V"
+      "name": "用千兆宽带领手机",
+      "unique_id": "",
+      "pay_gmv": 2300.0,
+      "pay_cert_cnt": 24,
+      "duration": "2小时19分7秒",
+      "type": "职人"
     },
     {
       "rank": 5,
       "name": "太原电信线上营业厅",
       "unique_id": "tydx10000",
-      "pay_gmv": 1350.0,
-      "pay_cert_cnt": 14,
-      "duration": "1小时24分29秒",
+      "pay_gmv": 1900.0,
+      "pay_cert_cnt": 22,
+      "duration": "1小时32分59秒",
       "type": "蓝V"
     }
   ],
   "source_distribution": [
     {
       "name": "推荐分享场景",
-      "value": 39908.1,
-      "ratio": 57.43
+      "value": 53498.1,
+      "ratio": 57.2
     },
     {
       "name": "抖音搜索场景",
-      "value": 19040.0,
-      "ratio": 27.4
+      "value": 24660.0,
+      "ratio": 26.37
     },
     {
       "name": "团购商城场景",
-      "value": 9250.0,
-      "ratio": 13.31
+      "value": 13850.0,
+      "ratio": 14.81
     },
     {
       "name": "线下场景",
-      "value": 1295.0,
-      "ratio": 1.86
+      "value": 1513.0,
+      "ratio": 1.62
     }
   ],
   "product_type": [
     {
       "name": "团购",
-      "value": 67043.0,
-      "ratio": 96.47
+      "value": 91321.0,
+      "ratio": 97.65
     },
     {
       "name": "代金券",
-      "value": 2450.1,
-      "ratio": 3.53
+      "value": 2200.1,
+      "ratio": 2.35
     }
   ],
   "channel_distribution": {
-    "live_gmv": 37888.1,
-    "live_ratio": 54.52,
-    "live_ratio_change": -2.35,
-    "video_gmv": 13650.0,
-    "video_ratio": 19.64,
-    "video_ratio_change": -31.57,
-    "other_gmv": 7745.0,
-    "other_ratio": 11.14,
-    "other_ratio_change": -20.77,
-    "huoke_gmv": 4300.0,
-    "huoke_ratio": 6.19,
-    "huoke_ratio_change": -48.19,
-    "search_card_gmv": 5910.0,
-    "search_card_ratio": 8.5,
-    "search_card_ratio_change": -6.78
+    "live_gmv": 49518.1,
+    "live_ratio": 52.95,
+    "live_ratio_change": 55.97,
+    "video_gmv": 20350.0,
+    "video_ratio": 21.76,
+    "video_ratio_change": 12.44,
+    "other_gmv": 12423.0,
+    "other_ratio": 13.28,
+    "other_ratio_change": 43.16,
+    "huoke_gmv": 3250.0,
+    "huoke_ratio": 3.48,
+    "huoke_ratio_change": -64.09,
+    "search_card_gmv": 7980.0,
+    "search_card_ratio": 8.53,
+    "search_card_ratio_change": 9.77
   },
   "qa": {
     "summary": {
@@ -594,14 +594,29 @@
     },
     "craftman_live_top": [
       {
-        "nickname": "茜茜(杏花岭区旱西关营业厅)",
-        "douyin_id": "28218762071",
+        "nickname": "小吉(千峰路店)",
+        "douyin_id": "",
+        "sales": 2613.0
+      },
+      {
+        "nickname": "宵宵(黎氏阁)",
+        "douyin_id": "",
+        "sales": 1800.0
+      },
+      {
+        "nickname": "小路(西山)",
+        "douyin_id": "",
+        "sales": 1250.0
+      },
+      {
+        "nickname": "茜茜(旱西关)",
+        "douyin_id": "",
         "sales": 1200.0
       },
       {
-        "nickname": "梅梅(朝阳街营业厅)",
-        "douyin_id": "71951548365",
-        "sales": 500.0
+        "nickname": "小姐姐(融创)",
+        "douyin_id": "",
+        "sales": 1150.0
       }
     ]
   },
@@ -1418,6 +1433,15 @@
           "show_uv": 0,
           "watch_uv": 495,
           "gmv": 1950,
+          "pay_cert_cnt": 0
+        },
+        {
+          "time": "10:25",
+          "author_cnt": 1,
+          "live_cnt": 1,
+          "show_uv": 0,
+          "watch_uv": 495,
+          "gmv": 1950.0,
           "pay_cert_cnt": 0
         }
       ]
