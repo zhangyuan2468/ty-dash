@@ -1,18 +1,18 @@
 {
-  "ts": "20260828154906",
+  "ts": "20260831101630",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 3,
-    "live_cnt": 3,
+    "live_author_cnt": 1,
+    "live_cnt": 1,
     "live_show_uv": 0,
-    "live_watch_uv": 99,
-    "live_gmv": 100.0,
+    "live_watch_uv": 495,
+    "live_gmv": 1950.0,
     "live_pay_cert_cnt": 0,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260828154906",
+    "_ts": "20260831101616",
     "_stale": false
   },
   "summary": {
@@ -59,65 +59,21 @@
   "rooms": [
     {
       "meta": {
-        "nickname": "太原平阳路翼堆小姐姐",
-        "unique_id": "PYL13327400023",
+        "nickname": "太原电信线上营业厅",
+        "unique_id": "tydx10000",
         "room_id": "",
         "is_live": true,
-        "gmv": 100.0,
+        "gmv": 1950.0,
         "acu": 0,
         "pcu": 0,
-        "live_watch_uv_td": 5,
+        "live_watch_uv_td": 495,
         "live_show_uv_td": 0,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-28 15:33:26",
+        "live_start_str": "2026-08-31 09:15:23",
         "duration_str": "",
-        "room_title": "太原平阳路翼堆小姐姐正在直播",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "",
-        "has_qrcode": true
-      }
-    },
-    {
-      "meta": {
-        "nickname": "清徐电信 宽带直降专场",
-        "unique_id": "52534765753",
-        "room_id": "",
-        "is_live": true,
-        "gmv": 0.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 28,
-        "live_show_uv_td": 0,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-28 15:12:04",
-        "duration_str": "",
-        "room_title": "清徐电信 宽带直降专场正在直播",
-        "room_type_tag": "职人",
-        "city": "太原",
-        "area": "",
-        "has_qrcode": true
-      }
-    },
-    {
-      "meta": {
-        "nickname": "欢迎大家走进直播间～",
-        "unique_id": "54126952968",
-        "room_id": "",
-        "is_live": true,
-        "gmv": 0.0,
-        "acu": 0,
-        "pcu": 0,
-        "live_watch_uv_td": 66,
-        "live_show_uv_td": 0,
-        "live_like_cnt_td": 0,
-        "live_comment_cnt_td": 0,
-        "live_start_str": "2026-08-28 15:02:07",
-        "duration_str": "",
-        "room_title": "欢迎大家走进直播间～正在直播",
-        "room_type_tag": "职人",
+        "room_title": "太原电信线上营业厅正在直播",
+        "room_type_tag": "蓝V",
         "city": "太原",
         "area": "",
         "has_qrcode": true
@@ -490,40 +446,162 @@
   },
   "qa": {
     "summary": {
-      "live_cnt": 3,
+      "live_cnt": 9,
       "alert_cnt": 0,
       "severe_cnt": 0,
       "warn_cnt": 0,
       "info_cnt": 0,
-      "pass_cnt": 3,
+      "pass_cnt": 9,
       "qa_round": 1
     },
-    "rooms": [],
+    "rooms": [
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-26 09:25:49",
+        "duration_str": "1小时43分0秒",
+        "gmv": 2950.0,
+        "pay_cert_cnt": 25,
+        "watch_uv": 775,
+        "gpm": 3371.43,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-25 15:28:59",
+        "duration_str": "1小时33分32秒",
+        "gmv": 2400.0,
+        "pay_cert_cnt": 19,
+        "watch_uv": 747,
+        "gpm": 2846.98,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "用千兆宽带领手机",
+        "room_type_tag": "职人",
+        "is_live": false,
+        "live_start_str": "2026-08-30 10:15:50",
+        "duration_str": "2小时19分7秒",
+        "gmv": 2300.0,
+        "pay_cert_cnt": 24,
+        "watch_uv": 561,
+        "gpm": 3500.76,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-28 16:24:04",
+        "duration_str": "1小时32分59秒",
+        "gmv": 1900.0,
+        "pay_cert_cnt": 22,
+        "watch_uv": 392,
+        "gpm": 4241.07,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-28 10:27:11",
+        "duration_str": "1小时17分7秒",
+        "gmv": 1900.0,
+        "pay_cert_cnt": 19,
+        "watch_uv": 583,
+        "gpm": 2905.2,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "辜负✨",
+        "room_type_tag": "职人",
+        "is_live": false,
+        "live_start_str": "2026-08-29 16:20:39",
+        "duration_str": "2小时7分8秒",
+        "gmv": 1800.0,
+        "pay_cert_cnt": 20,
+        "watch_uv": 695,
+        "gpm": 2278.48,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "电信福利",
+        "room_type_tag": "职人",
+        "is_live": false,
+        "live_start_str": "2026-08-30 20:31:19",
+        "duration_str": "2小时0分31秒",
+        "gmv": 1650.0,
+        "pay_cert_cnt": 19,
+        "watch_uv": 640,
+        "gpm": 2337.11,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-25 10:16:14",
+        "duration_str": "40分43秒",
+        "gmv": 1559.0,
+        "pay_cert_cnt": 13,
+        "watch_uv": 244,
+        "gpm": 5669.09,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      },
+      {
+        "nickname": "太原电信线上营业厅",
+        "room_type_tag": "蓝V",
+        "is_live": false,
+        "live_start_str": "2026-08-24 16:19:37",
+        "duration_str": "1小时24分29秒",
+        "gmv": 1350.0,
+        "pay_cert_cnt": 14,
+        "watch_uv": 575,
+        "gpm": 2073.73,
+        "alerts": [],
+        "qa_pass": true,
+        "qa_round": 1
+      }
+    ],
     "alerts": [],
     "craftman_summary": {
-      "total": 5789,
-      "active": 36,
-      "has_sales": 36,
-      "week_sales": 41954.99,
-      "week_verify": 18895.0,
-      "remain": 4184,
+      "total": 5819,
+      "active": 38,
+      "has_sales": 38,
+      "week_sales": 51616.99,
+      "week_verify": 18463.0,
+      "remain": 4181,
       "limit": 10000
     },
     "craftman_live_top": [
       {
-        "nickname": "茜茜(旱西关店)",
+        "nickname": "茜茜(杏花岭区旱西关营业厅)",
         "douyin_id": "28218762071",
-        "sales": 1400.0
+        "sales": 1200.0
       },
       {
-        "nickname": "梅梅(朝阳街店)",
+        "nickname": "梅梅(朝阳街营业厅)",
         "douyin_id": "71951548365",
-        "sales": 300.0
-      },
-      {
-        "nickname": "店长小姐姐(新建南路店)",
-        "douyin_id": "41920541559",
-        "sales": 200.0
+        "sales": 500.0
       }
     ]
   },
@@ -1314,15 +1392,6 @@
           "pay_cert_cnt": 5
         },
         {
-          "time": "11:54",
-          "author_cnt": 2,
-          "live_cnt": 2,
-          "show_uv": 1634,
-          "watch_uv": 155,
-          "gmv": 500,
-          "pay_cert_cnt": 5
-        },
-        {
           "time": "12:18",
           "author_cnt": 0,
           "live_cnt": 0,
@@ -1338,6 +1407,17 @@
           "show_uv": 0,
           "watch_uv": 99,
           "gmv": 100,
+          "pay_cert_cnt": 0
+        }
+      ],
+      "2026-08-31": [
+        {
+          "time": "10:16",
+          "author_cnt": 1,
+          "live_cnt": 1,
+          "show_uv": 0,
+          "watch_uv": 495,
+          "gmv": 1950,
           "pay_cert_cnt": 0
         }
       ]

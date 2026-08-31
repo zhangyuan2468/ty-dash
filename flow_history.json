@@ -336,6 +336,17 @@
         "gmv": 100,
         "pay_cert_cnt": 0
       }
+    ],
+    "2026-08-31": [
+      {
+        "time": "10:16",
+        "author_cnt": 1,
+        "live_cnt": 1,
+        "show_uv": 0,
+        "watch_uv": 495,
+        "gmv": 1950,
+        "pay_cert_cnt": 0
+      }
     ]
   }
 }
