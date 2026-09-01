@@ -364,6 +364,15 @@
         "watch_uv": 118,
         "gmv": 200,
         "pay_cert_cnt": 2
+      },
+      {
+        "time": "17:37",
+        "author_cnt": 3,
+        "live_cnt": 3,
+        "show_uv": 3080,
+        "watch_uv": 353,
+        "gmv": 1400,
+        "pay_cert_cnt": 19
       }
     ],
     "2026-09-01": [
@@ -384,6 +393,15 @@
         "watch_uv": 1066,
         "gmv": 3150,
         "pay_cert_cnt": 34
+      },
+      {
+        "time": "17:30",
+        "author_cnt": 3,
+        "live_cnt": 3,
+        "show_uv": 12851,
+        "watch_uv": 1617,
+        "gmv": 5750,
+        "pay_cert_cnt": 0
       }
     ]
   }
