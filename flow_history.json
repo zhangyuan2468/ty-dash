@@ -365,6 +365,26 @@
         "gmv": 200,
         "pay_cert_cnt": 2
       }
+    ],
+    "2026-09-01": [
+      {
+        "time": "16:38",
+        "author_cnt": 2,
+        "live_cnt": 2,
+        "show_uv": 6146,
+        "watch_uv": 639,
+        "gmv": 1550,
+        "pay_cert_cnt": 16
+      },
+      {
+        "time": "16:47",
+        "author_cnt": 2,
+        "live_cnt": 2,
+        "show_uv": 10441,
+        "watch_uv": 1066,
+        "gmv": 3150,
+        "pay_cert_cnt": 34
+      }
     ]
   }
 }
