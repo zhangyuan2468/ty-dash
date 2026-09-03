@@ -1,18 +1,18 @@
 {
-  "ts": "20260903164358",
+  "ts": "20260903165836",
   "city": "太原",
   "flow_realtime": {
-    "live_author_cnt": 2,
-    "live_cnt": 2,
-    "live_show_uv": 1344,
-    "live_watch_uv": 150,
-    "live_gmv": 550.0,
-    "live_pay_cert_cnt": 6,
+    "live_author_cnt": 3,
+    "live_cnt": 3,
+    "live_show_uv": 3998,
+    "live_watch_uv": 403,
+    "live_gmv": 950.0,
+    "live_pay_cert_cnt": 11,
     "live_verify_cert_cnt": 0,
     "live_refund_cert_cnt": 0,
     "live_comment_cnt": 0,
     "live_like_cnt": 0,
-    "_ts": "20260903164358",
+    "_ts": "20260903165836",
     "_stale": false
   },
   "summary": {
@@ -69,15 +69,15 @@
         "unique_id": "tydx10000",
         "room_id": "dd293233d2163533a374f14d8c87c955129668e0f864d90589fb1346b4d99492",
         "is_live": true,
-        "gmv": 550000.0,
-        "acu": 6,
-        "pcu": 145,
-        "live_watch_uv_td": 137,
-        "live_show_uv_td": 1238,
+        "gmv": 85000.0,
+        "acu": 4,
+        "pcu": 357,
+        "live_watch_uv_td": 357,
+        "live_show_uv_td": 3243,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-09-03",
-        "duration_str": "",
+        "live_start_str": "2026-09-03 15:42:50",
+        "duration_str": "01:13:44",
         "room_title": "充值专场",
         "room_type_tag": "蓝V",
         "city": "太原",
@@ -87,20 +87,42 @@
     },
     {
       "meta": {
-        "nickname": "小张中国电信(董家街营业厅)",
-        "unique_id": "mengfeng2383",
-        "room_id": "cffe4a788963c26b46629dfd3c02d869949c71f2bf498b4f28d2c8d6d1f49025",
+        "nickname": "清徐紫林路翼堆小姐姐",
+        "unique_id": "52534765753",
+        "room_id": "30a2bf8a78a062c0b28bdfaa614b92ec62cb0133ed9366630ba44246f9c7160c",
+        "is_live": true,
+        "gmv": 10000.0,
+        "acu": 1,
+        "pcu": 43,
+        "live_watch_uv_td": 43,
+        "live_show_uv_td": 695,
+        "live_like_cnt_td": 0,
+        "live_comment_cnt_td": 0,
+        "live_start_str": "2026-09-03 16:19:49",
+        "duration_str": "00:37:01",
+        "room_title": "清徐电信 宽带直降专场",
+        "room_type_tag": "职人",
+        "city": "太原",
+        "area": "",
+        "has_qrcode": true
+      }
+    },
+    {
+      "meta": {
+        "nickname": "太原市清徐县醋都天翼小姐姐",
+        "unique_id": "44337940011",
+        "room_id": "a1764fac4ca080571f565bdb5d1fe7990a53a42a30e64a2127e2d663420085fe",
         "is_live": true,
         "gmv": 0.0,
         "acu": 0,
-        "pcu": 12,
-        "live_watch_uv_td": 13,
-        "live_show_uv_td": 106,
+        "pcu": 3,
+        "live_watch_uv_td": 3,
+        "live_show_uv_td": 60,
         "live_like_cnt_td": 0,
         "live_comment_cnt_td": 0,
-        "live_start_str": "2026-09-03",
-        "duration_str": "",
-        "room_title": "电信八月福利专场",
+        "live_start_str": "2026-09-03 16:25:16",
+        "duration_str": "00:31:54",
+        "room_title": "太原电信福利专场",
         "room_type_tag": "职人",
         "city": "太原",
         "area": "",
@@ -474,18 +496,28 @@
   },
   "qa": {
     "summary": {
-      "live_cnt": 2,
-      "alert_cnt": 1,
-      "severe_cnt": 1,
+      "live_cnt": 3,
+      "alert_cnt": 3,
+      "severe_cnt": 3,
       "warn_cnt": 0,
       "info_cnt": 0,
-      "pass_cnt": 1,
+      "pass_cnt": 0,
       "qa_round": 1
     },
     "rooms": [],
     "alerts": [
       {
-        "room": "小张中国电信(董家街营业厅)",
+        "room": "太原电信线上营业厅",
+        "level": "severe",
+        "text": "挂播预警：在线仅4人，疑似挂播/空播"
+      },
+      {
+        "room": "清徐紫林路翼堆小姐姐",
+        "level": "severe",
+        "text": "挂播预警：在线仅1人，疑似挂播/空播"
+      },
+      {
+        "room": "太原市清徐县醋都天翼小姐姐",
         "level": "severe",
         "text": "挂播预警：在线仅0人，疑似挂播/空播"
       }
@@ -1445,6 +1477,15 @@
           "watch_uv": 150,
           "gmv": 550,
           "pay_cert_cnt": 6
+        },
+        {
+          "time": "16:58",
+          "author_cnt": 3,
+          "live_cnt": 3,
+          "show_uv": 3998,
+          "watch_uv": 403,
+          "gmv": 950,
+          "pay_cert_cnt": 11
         }
       ]
     }
