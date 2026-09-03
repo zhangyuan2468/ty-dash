@@ -403,6 +403,17 @@
         "gmv": 5750,
         "pay_cert_cnt": 0
       }
+    ],
+    "2026-09-03": [
+      {
+        "time": "16:27",
+        "author_cnt": 3,
+        "live_cnt": 3,
+        "show_uv": 3842,
+        "watch_uv": 460,
+        "gmv": 950,
+        "pay_cert_cnt": 11
+      }
     ]
   }
 }
